@@ -26,35 +26,29 @@ namespace devlog98.Backdoor {
         public void OnLeftClickStarted(InputAction.CallbackContext context) {
             RaycastHit hit;
 
-            switch (mouse.clickCount.ReadValue()) {
-                // single click
-                case 1:
-                    currentDragger = this;
+            // single click
+            currentDragger = this;
 
-                    // try to get dragger object on screen
-                    if (Physics.Raycast(Camera.main.ScreenPointToRay(mouse.position.ReadValue()), out hit, maxClickDistance)) {
-                        // if hit object can be dragged
-                        IMouse dragger = hit.collider.gameObject.GetComponent<IMouse>();
-                        if (dragger != null) {
-                            currentDragger = dragger;
-                        }
-                    }
+            // try to get dragger object on screen
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(mouse.position.ReadValue()), out hit, maxClickDistance)) {
+                // if hit object can be dragged
+                IMouse dragger = hit.collider.gameObject.GetComponent<IMouse>();
+                if (dragger != null) {
+                    currentDragger = dragger;
+                }
+            }
 
-                    // activate dragger object functions
-                    currentDragger.OnMouseDown(context);
-                    mouseDrag.performed += currentDragger.OnMouseDrag;
+            // activate dragger object functions
+            currentDragger.OnMouseDown(context);
+            mouseDrag.performed += currentDragger.OnMouseDrag;
 
-                    break;
-
-                // double click
-                case 2:
-                    if (Physics.Raycast(Camera.main.ScreenPointToRay(mouse.position.ReadValue()), out hit, maxClickDistance)) {
-                        // if hit object can be double clicked
-                        IDoubleClick doubleClick = hit.collider.gameObject.GetComponent<IDoubleClick>();
-                        doubleClick?.OnDoubleClick();
-                    }
-
-                    break;
+            // double click
+            if (mouse.clickCount.ReadValue() > 2) {
+                if (Physics.Raycast(Camera.main.ScreenPointToRay(mouse.position.ReadValue()), out hit, maxClickDistance)) {
+                    // if hit object can be double clicked
+                    IDoubleClick doubleClick = hit.collider.gameObject.GetComponent<IDoubleClick>();
+                    doubleClick?.OnDoubleClick();
+                }
             }
         }
 
