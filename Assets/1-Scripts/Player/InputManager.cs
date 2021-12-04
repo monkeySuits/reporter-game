@@ -1,0 +1,63 @@
+﻿using UnityEngine;
+
+/*
+ * Controls all inputs from game
+ */
+
+namespace devlog98.Backdoor {
+
+#pragma warning disable 649
+
+    public class InputManager : MonoBehaviour {
+        [SerializeField] private PlayerMovement movement; // reference to player movement script
+        [SerializeField] private PlayerMouseLook mouseLook; // reference to mouse look script
+        [SerializeField] private PlayerMouseClick mouseClick; // reference to mouse click script
+
+        private PlayerController controller; // reference to Input System class
+        private PlayerController.PlayerMovementActions playerMovement; // reference to Input System group of inputs
+
+        private Vector2 horizontalInput; // stores horizontal movement
+        private Vector2 mouseInput; // stores mouse movement
+
+        // input manager setup
+        private void Awake() {
+            controller = new PlayerController();
+            playerMovement = controller.PlayerMovement;
+
+            // horizontal input
+            playerMovement.Walk.performed += ctx => horizontalInput = ctx.ReadValue<Vector2>();
+
+            // jump input
+            playerMovement.Jump.performed += _ => movement.OnJumpPressed();
+
+            // mouse input
+            playerMovement.MouseX.performed += ctx => mouseInput.x = ctx.ReadValue<float>();
+            playerMovement.MouseY.performed += ctx => mouseInput.y = ctx.ReadValue<float>();
+
+            // mouse click input
+            playerMovement.LeftClick.started += mouseClick.OnLeftClickStarted;
+            playerMovement.LeftClick.canceled += mouseClick.OnLeftClickCanceled;
+            playerMovement.RightClick.started += mouseClick.OnRightClickStarted;
+            playerMovement.RightClick.canceled += mouseClick.OnRightClickCanceled;
+            mouseClick.Initialize(playerMovement.MouseDrag);
+
+            // restart input
+            //playerMovement.Restart.performed += _ => GeneralManager.instance.KillPlayer();
+        }
+
+        // send inputs to movement scripts
+        private void Update() {
+            movement.ReceiveInput(horizontalInput);
+            mouseLook.ReceiveInput(mouseInput);
+        }
+
+        // you must always enable and disable the new input system
+        private void OnEnable() {
+            controller.Enable();
+        }
+
+        private void OnDisable() {
+            controller.Disable();
+        }
+    }
+}
