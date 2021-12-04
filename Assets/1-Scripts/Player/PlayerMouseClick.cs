@@ -18,12 +18,12 @@ namespace devlog98.Backdoor {
 
         // mouse clic setup
         public void Initialize(InputAction drag) {
-            mouse = Mouse.current;
             mouseDrag = drag;
         }
 
         // left click events
         public void OnLeftClickStarted(InputAction.CallbackContext context) {
+            mouse = Mouse.current;
             RaycastHit hit;
 
             // single click
