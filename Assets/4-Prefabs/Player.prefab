@@ -104,7 +104,7 @@ MonoBehaviour:
   coyoteTimer: 0.2
   groundMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 65
   groundRadiusCollision: 0.1
   animator: {fileID: 0}
   walkFeedback: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 2495079759763268354}
   - component: {fileID: 2495079759763268364}
   - component: {fileID: 2495079759763268365}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Model
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.76708794, g: 0.8429898, b: 0.9622642, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
