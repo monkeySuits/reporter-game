@@ -21,12 +21,13 @@ public class GoalsDisplay : MonoBehaviour
         artworkImage.sprite = goals.artworkImage;
     }
 
+//Função responsavel for assinalar o checkbox ao completar o objetivo
     public void Checked(){
         artworkImage.sprite = goals.artworkImageChecked;
         check = true;
         CheckedEffect();
     }
-
+//Efeitos
     private void CheckedEffect(){
         Color Image = artworkImage.color;
         Color text = goal.color;
@@ -35,7 +36,7 @@ public class GoalsDisplay : MonoBehaviour
         artworkImage.color = Image;
         goal.color = text;
     }
-
+//Retorna se o objetivo foi completo ou não
     public bool Made(){
         return check;
     }

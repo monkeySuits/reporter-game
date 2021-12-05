@@ -7,7 +7,8 @@ public class ObjectivesControl : MonoBehaviour
     [Header("Goals")]
     [SerializeField] private GameObject[] fixedObjectives;
     [SerializeField] private GameObject[] optionalObjectives;
-    // Start is called before the first frame update
+
+//Verifica se o player completou o objetivo obrigatório
     public bool checkFixedObjectives(){
         int qtd = fixedObjectives.Length;
         bool made;
@@ -20,7 +21,7 @@ public class ObjectivesControl : MonoBehaviour
         }
         return true;
     }
-
+//Verifica se o jogador completou o objetivo opcional
     public bool checkOptionalObjectives(){
         int qtd = optionalObjectives.Length;
         bool made;
