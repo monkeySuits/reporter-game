@@ -76,8 +76,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4568448165052147606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +225,14 @@ PrefabInstance:
     - target: {fileID: 7107147637554303239, guid: b04f7c5939082e944948db6398531e8b, type: 3}
       propertyPath: m_Name
       value: chave
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107147637554303239, guid: b04f7c5939082e944948db6398531e8b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107147637554303239, guid: b04f7c5939082e944948db6398531e8b, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
       objectReference: {fileID: 0}
     - target: {fileID: 7632046325623557053, guid: b04f7c5939082e944948db6398531e8b, type: 3}
       propertyPath: m_RootOrder

@@ -17,6 +17,7 @@ namespace devlog98.Backdoor {
 
         // be collected by player
         public void OnMouseDown(InputAction.CallbackContext context) {
+            Debug.Log("Pegou chave");
             CollectItem();
         }
 

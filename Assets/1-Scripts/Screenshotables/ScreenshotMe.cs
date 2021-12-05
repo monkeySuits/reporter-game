@@ -12,7 +12,8 @@ namespace Reporter {
         [SerializeField] private List<Transform> raycastPoints; // list of points to check player visibility
         [SerializeField] private LayerMask raycastMask; // layers that can block player visibility
 
-        [Header("Screenshot Results")]
+        [Header("Screenshot")]
+        [SerializeField] private float screenshotDistance;
         [SerializeField] private UnityEvent screenshotEvents; // events to happen when object is screenshot
 
         private bool isVisible;
@@ -40,7 +41,8 @@ namespace Reporter {
                 if (isVisible) {
                     // check if any object is obstructing player
                     foreach (Transform raycastPoint in raycastPoints) {
-                        isVisible = !Physics.Linecast(raycastPoint.position, Camera.main.transform.position, raycastMask);
+                        isVisible = Physics.Raycast(raycastPoint.position, (Camera.main.transform.position - raycastPoint.position), screenshotDistance, raycastMask);
+                        //isVisible = !Physics.Linecast(raycastPoint.position, Camera.main.transform.position, raycastMask);
                         if (isVisible) {
                             break;
                         }

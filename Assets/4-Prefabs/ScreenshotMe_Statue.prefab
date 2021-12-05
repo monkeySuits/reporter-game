@@ -191,6 +191,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 973254627038387847, guid: b0c035135d0769a4281b73a617fe7cd4, type: 3}
+      propertyPath: screenshotDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 973254627038387847, guid: b0c035135d0769a4281b73a617fe7cd4, type: 3}
       propertyPath: renderers.Array.data[0]
       value: 
       objectReference: {fileID: 3093854354826878188}

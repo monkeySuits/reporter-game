@@ -115,7 +115,11 @@ MonoBehaviour:
   - {fileID: 2741409297997715164}
   raycastMask:
     serializedVersion: 2
-    m_Bits: 65
+    m_Bits: 128
+  screenshotDistance: 25
+  screenshotEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2741409297997715165
 GameObject:
   m_ObjectHideFlags: 0
