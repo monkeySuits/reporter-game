@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Reporter;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 /*
@@ -59,8 +60,13 @@ namespace devlog98.Backdoor {
         }
 
         // right click events
-        public void OnRightClickStarted(InputAction.CallbackContext context) { }
-        public void OnRightClickCanceled(InputAction.CallbackContext context) { }
+        public void OnRightClickStarted(InputAction.CallbackContext context) {
+            PlayerCamera.instance.ActivateCamera();
+        }
+
+        public void OnRightClickCanceled(InputAction.CallbackContext context) {
+            PlayerCamera.instance.DeactivateCamera();
+        }
 
         // IMouse implementation is not used on this script, but avoids error when clicking in no object
         public void OnMouseDown(InputAction.CallbackContext context) { }
