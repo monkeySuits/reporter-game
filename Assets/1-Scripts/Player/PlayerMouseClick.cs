@@ -60,14 +60,9 @@ namespace devlog98.Backdoor {
             currentDragger.OnMouseUp(context);
         }
 
-        // right click events
-        public void OnRightClickStarted(InputAction.CallbackContext context) {
-            PlayerCamera.instance.ActivateCamera();
-        }
-
-        public void OnRightClickCanceled(InputAction.CallbackContext context) {
-            PlayerCamera.instance.DeactivateCamera();
-        }
+        // unused methods
+        public void OnRightClickStarted(InputAction.CallbackContext context) { }
+        public void OnRightClickCanceled(InputAction.CallbackContext context) { }
 
         // IMouse implementation is not used on this script, but avoids error when clicking in no object
         public void OnMouseDown(InputAction.CallbackContext context) { }

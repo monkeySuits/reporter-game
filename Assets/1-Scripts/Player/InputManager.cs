@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Reporter;
+using UnityEngine;
 
 /*
  * Controls all inputs from game
@@ -29,6 +30,9 @@ namespace devlog98.Backdoor {
 
             // jump input
             playerMovement.Jump.performed += _ => movement.OnJumpPressed();
+
+            // screenshot input
+            playerMovement.Screenshot.performed += _ => PlayerCamera.instance.ActivateCamera();
 
             // mouse input
             playerMovement.MouseX.performed += ctx => mouseInput.x = ctx.ReadValue<float>();

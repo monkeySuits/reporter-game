@@ -35,6 +35,14 @@ public class @PlayerController : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
+                    ""name"": ""Screenshot"",
+                    ""type"": ""Button"",
+                    ""id"": ""f54300ad-c945-4dbd-8714-14d09b5485ad"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
                     ""name"": ""MouseX"",
                     ""type"": ""PassThrough"",
                     ""id"": ""0c958753-469b-4fbe-b085-740659493a59"",
@@ -215,6 +223,17 @@ public class @PlayerController : IInputActionCollection, IDisposable
                     ""action"": ""Restart"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""96e80e98-03f6-41ea-bee4-f240c0a93b7b"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Screenshot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -225,6 +244,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
         m_PlayerMovement = asset.FindActionMap("Player Movement", throwIfNotFound: true);
         m_PlayerMovement_Walk = m_PlayerMovement.FindAction("Walk", throwIfNotFound: true);
         m_PlayerMovement_Jump = m_PlayerMovement.FindAction("Jump", throwIfNotFound: true);
+        m_PlayerMovement_Screenshot = m_PlayerMovement.FindAction("Screenshot", throwIfNotFound: true);
         m_PlayerMovement_MouseX = m_PlayerMovement.FindAction("MouseX", throwIfNotFound: true);
         m_PlayerMovement_MouseY = m_PlayerMovement.FindAction("MouseY", throwIfNotFound: true);
         m_PlayerMovement_MouseDrag = m_PlayerMovement.FindAction("MouseDrag", throwIfNotFound: true);
@@ -282,6 +302,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
     private IPlayerMovementActions m_PlayerMovementActionsCallbackInterface;
     private readonly InputAction m_PlayerMovement_Walk;
     private readonly InputAction m_PlayerMovement_Jump;
+    private readonly InputAction m_PlayerMovement_Screenshot;
     private readonly InputAction m_PlayerMovement_MouseX;
     private readonly InputAction m_PlayerMovement_MouseY;
     private readonly InputAction m_PlayerMovement_MouseDrag;
@@ -294,6 +315,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
         public PlayerMovementActions(@PlayerController wrapper) { m_Wrapper = wrapper; }
         public InputAction @Walk => m_Wrapper.m_PlayerMovement_Walk;
         public InputAction @Jump => m_Wrapper.m_PlayerMovement_Jump;
+        public InputAction @Screenshot => m_Wrapper.m_PlayerMovement_Screenshot;
         public InputAction @MouseX => m_Wrapper.m_PlayerMovement_MouseX;
         public InputAction @MouseY => m_Wrapper.m_PlayerMovement_MouseY;
         public InputAction @MouseDrag => m_Wrapper.m_PlayerMovement_MouseDrag;
@@ -315,6 +337,9 @@ public class @PlayerController : IInputActionCollection, IDisposable
                 @Jump.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnJump;
+                @Screenshot.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnScreenshot;
+                @Screenshot.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnScreenshot;
+                @Screenshot.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnScreenshot;
                 @MouseX.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnMouseX;
                 @MouseX.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnMouseX;
                 @MouseX.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnMouseX;
@@ -343,6 +368,9 @@ public class @PlayerController : IInputActionCollection, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @Screenshot.started += instance.OnScreenshot;
+                @Screenshot.performed += instance.OnScreenshot;
+                @Screenshot.canceled += instance.OnScreenshot;
                 @MouseX.started += instance.OnMouseX;
                 @MouseX.performed += instance.OnMouseX;
                 @MouseX.canceled += instance.OnMouseX;
@@ -369,6 +397,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
     {
         void OnWalk(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnScreenshot(InputAction.CallbackContext context);
         void OnMouseX(InputAction.CallbackContext context);
         void OnMouseY(InputAction.CallbackContext context);
         void OnMouseDrag(InputAction.CallbackContext context);

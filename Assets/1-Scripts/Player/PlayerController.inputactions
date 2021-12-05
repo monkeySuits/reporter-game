@@ -22,6 +22,14 @@
                     "interactions": ""
                 },
                 {
+                    "name": "Screenshot",
+                    "type": "Button",
+                    "id": "f54300ad-c945-4dbd-8714-14d09b5485ad",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "MouseX",
                     "type": "PassThrough",
                     "id": "0c958753-469b-4fbe-b085-740659493a59",
@@ -200,6 +208,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Restart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "96e80e98-03f6-41ea-bee4-f240c0a93b7b",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Screenshot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
