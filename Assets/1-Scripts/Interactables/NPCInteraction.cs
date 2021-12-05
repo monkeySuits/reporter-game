@@ -9,8 +9,8 @@ public class NPCInteraction : MonoBehaviour, IMouse {
     [SerializeField] private Cutscene cutscene;
 
     public void OnMouseDown(InputAction.CallbackContext context) {
-        if (!cutscene.HasStarted) {
-            cutscene.StartCutscene();
+        if (cutscene != null && !cutscene.HasStarted) {
+            cutscene?.StartCutscene();
         }
         else {
             DialogueManager.instance.NextSentence();

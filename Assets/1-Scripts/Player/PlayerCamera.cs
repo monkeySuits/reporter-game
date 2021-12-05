@@ -1,3 +1,4 @@
+using MoreMountains.Feedbacks;
 using System;
 using UnityEngine;
 
@@ -15,6 +16,9 @@ namespace Reporter {
         //event permits observational pattern
         public static event Action ScreenshotEvent = delegate { };
 
+        [Header("Feedbacks")]
+        [SerializeField] private MMFeedbacks screenshotFeedback; // feedbacks
+
         // singleton setup
         private void Awake() {
             if (instance != null && instance != this) {
@@ -26,12 +30,12 @@ namespace Reporter {
         }
 
         public void ActivateCamera() {
-            Debug.Log("Usando camera");
+            screenshotFeedback.StopFeedbacks();
+            screenshotFeedback.PlayFeedbacks();
             ScreenshotEvent();
         }
 
-        public void DeactivateCamera() {
-            Debug.Log("Parando de usar camera");
-        }
+        // unused methods
+        public void DeactivateCamera() { }
     }
 }
