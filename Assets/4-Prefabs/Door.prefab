@@ -180,7 +180,7 @@ MonoBehaviour:
   Mode: 0
   TimeScale: 0
   RotationSpace: 0
-  AnimateRotationDuration: 3
+  AnimateRotationDuration: 0.5
   RemapCurveZero: 0
   RemapCurveOne: -145
   AnimateX: 0

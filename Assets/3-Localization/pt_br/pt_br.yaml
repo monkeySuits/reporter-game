@@ -2,3 +2,13 @@ items:
 #Test Dialogues
 - key: Test_1
   value: Ei, repórter! Muito estranho esse acidente que aconteceu na rua, né?
+
+#Ep 01
+- key: Citizen_1
+  value: Levaram… levaram ele para aquele beco…. Ele era tão jovem ainda, eu disse que desafiar as autoridades era besteira!
+- key: Guard_1
+  value: Alto lá, cidad… Ah é você, a repórter de fora… Como pode ver nós já demos um jeito na situação. Trate de anotar direitinho aí.
+- key: Guard_2
+  value: Eu definitivamente não sou pago para isso…
+- key: Guard_3
+  value: Circulando, este beco está interditado até segunda ordem…

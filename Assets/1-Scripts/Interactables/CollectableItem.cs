@@ -17,6 +17,16 @@ namespace devlog98.Backdoor {
 
         // be collected by player
         public void OnMouseDown(InputAction.CallbackContext context) {
+            CollectItem();
+        }
+
+        // be given to player on event
+        public void GivePlayer() {
+            CollectItem();
+        }
+
+        // put item on Player Inventory
+        private void CollectItem() {
             collectFeedback.PlayFeedbacks();
             PlayerHUD.instance.ShowHint(collectHint);
             PlayerInventory.instance.CollectableFound(this);
