@@ -18,7 +18,7 @@ namespace devlog98.Backdoor {
         // be collected by player
         public void OnMouseDown(InputAction.CallbackContext context) {
             collectFeedback.PlayFeedbacks();
-            //PlayerHUD.instance.ShowHint(collectHint);
+            PlayerHUD.instance.ShowHint(collectHint);
             PlayerInventory.instance.CollectableFound(this);
         }
 
