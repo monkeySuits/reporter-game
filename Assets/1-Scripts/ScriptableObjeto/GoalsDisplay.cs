@@ -19,21 +19,24 @@ public class GoalsDisplay : MonoBehaviour
     {
         goal.text = goalText;
         artworkImage.sprite = goals.artworkImage;
-        Invoke("Checked",2);
     }
 
-    void Checked(){
+    public void Checked(){
         artworkImage.sprite = goals.artworkImageChecked;
         check = true;
         CheckedEffect();
     }
 
-    void CheckedEffect(){
+    private void CheckedEffect(){
         Color Image = artworkImage.color;
         Color text = goal.color;
         Image.a = 1f;
         text.a = 1f;
         artworkImage.color = Image;
         goal.color = text;
+    }
+
+    public bool Made(){
+        return check;
     }
 }
