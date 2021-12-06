@@ -13,6 +13,7 @@ namespace devlog98.Backdoor {
         [SerializeField] private PlayerMovement movement; // reference to player movement script
         [SerializeField] private PlayerMouseLook mouseLook; // reference to mouse look script
         [SerializeField] private PlayerMouseClick mouseClick; // reference to mouse click script
+        [SerializeField] private PlayerReport report;
 
         private PlayerController controller; // reference to Input System class
         private PlayerController.PlayerMovementActions playerMovement; // reference to Input System group of inputs
@@ -46,7 +47,7 @@ namespace devlog98.Backdoor {
             mouseClick.Initialize(playerMovement.MouseDrag);
 
             // restart input
-            //playerMovement.Restart.performed += _ => GeneralManager.instance.KillPlayer();
+            playerMovement.Report.performed += _ => report.Report();
         }
 
         // send inputs to movement scripts

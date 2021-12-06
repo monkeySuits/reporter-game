@@ -70,7 +70,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Restart",
+                    "name": "Report",
                     "type": "Button",
                     "id": "578bb725-9d58-4c8f-a323-f1ddc00fce1b",
                     "expectedControlType": "Button",
@@ -207,7 +207,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Restart",
+                    "action": "Report",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

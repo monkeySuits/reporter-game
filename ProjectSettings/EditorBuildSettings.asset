@@ -8,5 +8,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2-Scenes/EP 1 - Abuso de poder.unity
     guid: 02b392432fd75c3408e0cdd40f928ca2
+  - enabled: 1
+    path: Assets/2-Scenes/EP 1 - Ending Complete.unity
+    guid: 61e55106a1e995b41b3d6847cce029bc
+  - enabled: 1
+    path: Assets/2-Scenes/EP 1 - Ending Incomplete.unity
+    guid: 84997c24121ef214089c036950f99b9b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 82aad389c43b2f64b9f2ccb22463333e, type: 2}

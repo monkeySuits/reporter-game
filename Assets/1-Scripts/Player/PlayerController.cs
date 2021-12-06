@@ -83,7 +83,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Restart"",
+                    ""name"": ""Report"",
                     ""type"": ""Button"",
                     ""id"": ""578bb725-9d58-4c8f-a323-f1ddc00fce1b"",
                     ""expectedControlType"": ""Button"",
@@ -220,7 +220,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Restart"",
+                    ""action"": ""Report"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -250,7 +250,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
         m_PlayerMovement_MouseDrag = m_PlayerMovement.FindAction("MouseDrag", throwIfNotFound: true);
         m_PlayerMovement_LeftClick = m_PlayerMovement.FindAction("LeftClick", throwIfNotFound: true);
         m_PlayerMovement_RightClick = m_PlayerMovement.FindAction("RightClick", throwIfNotFound: true);
-        m_PlayerMovement_Restart = m_PlayerMovement.FindAction("Restart", throwIfNotFound: true);
+        m_PlayerMovement_Report = m_PlayerMovement.FindAction("Report", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -308,7 +308,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerMovement_MouseDrag;
     private readonly InputAction m_PlayerMovement_LeftClick;
     private readonly InputAction m_PlayerMovement_RightClick;
-    private readonly InputAction m_PlayerMovement_Restart;
+    private readonly InputAction m_PlayerMovement_Report;
     public struct PlayerMovementActions
     {
         private @PlayerController m_Wrapper;
@@ -321,7 +321,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
         public InputAction @MouseDrag => m_Wrapper.m_PlayerMovement_MouseDrag;
         public InputAction @LeftClick => m_Wrapper.m_PlayerMovement_LeftClick;
         public InputAction @RightClick => m_Wrapper.m_PlayerMovement_RightClick;
-        public InputAction @Restart => m_Wrapper.m_PlayerMovement_Restart;
+        public InputAction @Report => m_Wrapper.m_PlayerMovement_Report;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -355,9 +355,9 @@ public class @PlayerController : IInputActionCollection, IDisposable
                 @RightClick.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRightClick;
                 @RightClick.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRightClick;
                 @RightClick.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRightClick;
-                @Restart.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRestart;
-                @Restart.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRestart;
-                @Restart.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnRestart;
+                @Report.started -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnReport;
+                @Report.performed -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnReport;
+                @Report.canceled -= m_Wrapper.m_PlayerMovementActionsCallbackInterface.OnReport;
             }
             m_Wrapper.m_PlayerMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -386,9 +386,9 @@ public class @PlayerController : IInputActionCollection, IDisposable
                 @RightClick.started += instance.OnRightClick;
                 @RightClick.performed += instance.OnRightClick;
                 @RightClick.canceled += instance.OnRightClick;
-                @Restart.started += instance.OnRestart;
-                @Restart.performed += instance.OnRestart;
-                @Restart.canceled += instance.OnRestart;
+                @Report.started += instance.OnReport;
+                @Report.performed += instance.OnReport;
+                @Report.canceled += instance.OnReport;
             }
         }
     }
@@ -403,6 +403,6 @@ public class @PlayerController : IInputActionCollection, IDisposable
         void OnMouseDrag(InputAction.CallbackContext context);
         void OnLeftClick(InputAction.CallbackContext context);
         void OnRightClick(InputAction.CallbackContext context);
-        void OnRestart(InputAction.CallbackContext context);
+        void OnReport(InputAction.CallbackContext context);
     }
 }

@@ -16,6 +16,9 @@ namespace devlog98.Backdoor {
         [SerializeField] private TextMeshProUGUI hintText; // text element for hints
         //[SerializeField] private TextMeshProUGUI messageText; // text element for messages (story beats)
 
+        [SerializeField] private ObjectivesControl objectivesControl;
+        [SerializeField] private GameObject reportText;
+
         [Header("Feedbacks")]
         [SerializeField] private MMFeedbacks hintTextFeedback; // feedbacks
         //[SerializeField] private MMFeedbacks showMessageFeedback;
@@ -28,6 +31,12 @@ namespace devlog98.Backdoor {
             }
             else {
                 instance = this;
+            }
+        }
+
+        private void Update() {
+            if (objectivesControl.checkFixedObjectives()) {
+                reportText.SetActive(true);
             }
         }
 

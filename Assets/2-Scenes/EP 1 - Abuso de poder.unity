@@ -12852,46 +12852,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1049664029617043414, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049664029617043414, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
-      propertyPath: m_Pivot.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049664029617043414, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049664029617043414, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049664029617043414, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049664029617043414, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049664029617043414, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049664029617043414, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1426713544369339675, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2169002828183072486, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 40.19995
-      objectReference: {fileID: 0}
+    - target: {fileID: 1181057690, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
+      propertyPath: objectivesControl
+      value: 
+      objectReference: {fileID: 1918330291}
     - target: {fileID: 2495079758423199737, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -12940,6 +12904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2681050212008690618, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
+      propertyPath: objectivesControl
+      value: 
+      objectReference: {fileID: 1918330291}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
 --- !u!4 &1183206260 stripped
