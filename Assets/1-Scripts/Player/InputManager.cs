@@ -34,7 +34,8 @@ namespace devlog98.Backdoor {
 
             // screenshot input
             playerMovement.Screenshot.performed += _ => PlayerCamera.instance.ActivateCamera();
-
+            playerMovement.RightClick.started += _ => PlayerCamera.instance.AimCamera();
+            playerMovement.RightClick.canceled += _ => PlayerCamera.instance.StopCamera();
             // mouse input
             playerMovement.MouseX.performed += ctx => mouseInput.x = ctx.ReadValue<float>();
             playerMovement.MouseY.performed += ctx => mouseInput.y = ctx.ReadValue<float>();
@@ -42,8 +43,8 @@ namespace devlog98.Backdoor {
             // mouse click input
             playerMovement.LeftClick.started += mouseClick.OnLeftClickStarted;
             playerMovement.LeftClick.canceled += mouseClick.OnLeftClickCanceled;
-            playerMovement.RightClick.started += mouseClick.OnRightClickStarted;
-            playerMovement.RightClick.canceled += mouseClick.OnRightClickCanceled;
+            // playerMovement.RightClick.started += mouseClick.OnRightClickStarted;
+            // playerMovement.RightClick.canceled += mouseClick.OnRightClickCanceled;
             mouseClick.Initialize(playerMovement.MouseDrag);
 
             // restart input
