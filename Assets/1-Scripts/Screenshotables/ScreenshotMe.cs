@@ -41,10 +41,16 @@ namespace Reporter {
                 if (isVisible) {
                     // check if any object is obstructing player
                     foreach (Transform raycastPoint in raycastPoints) {
-                        isVisible = Physics.Raycast(raycastPoint.position, (Camera.main.transform.position - raycastPoint.position), screenshotDistance, raycastMask);
-                        //isVisible = !Physics.Linecast(raycastPoint.position, Camera.main.transform.position, raycastMask);
+                        isVisible = !Physics.Linecast(raycastPoint.position, Camera.main.transform.position, raycastMask);
+
                         if (isVisible) {
-                            break;
+                            if (Vector3.Distance(raycastPoint.position, Camera.main.transform.position) <= screenshotDistance) {
+                                break;
+                            }
+                            else {
+                                isVisible = false;
+                                // TODO -> Show player that picture must be taken nearer to the object
+                            }
                         }
                     }
                 }
@@ -53,6 +59,19 @@ namespace Reporter {
                     isScreenshot = true;
                     screenshotEvents.Invoke();
                 }
+            }
+        }
+
+        private void OnDrawGizmos() {
+            foreach (Transform raycastPoint in raycastPoints) {
+                if (Vector3.Distance(raycastPoint.position, Camera.main.transform.position) <= screenshotDistance) {
+                    Gizmos.color = Color.green;
+                }
+                else {
+                    Gizmos.color = Color.red;
+                }
+
+                Gizmos.DrawRay(raycastPoint.position, (Camera.main.transform.position - raycastPoint.position).normalized * screenshotDistance);
             }
         }
     }

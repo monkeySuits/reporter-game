@@ -115,7 +115,7 @@ MonoBehaviour:
   - {fileID: 2741409297997715164}
   raycastMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 65
   screenshotDistance: 25
   screenshotEvents:
     m_PersistentCalls:
