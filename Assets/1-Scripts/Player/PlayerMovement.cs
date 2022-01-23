@@ -13,6 +13,7 @@ namespace devlog98.Backdoor {
         [Header("Walk")]
         [SerializeField] private CharacterController controller; // reference to character controller responsible for movement
         [SerializeField] private float speed = 11f; // movement speed
+        private float speedMultiplier = 1f; // multiplier used to change base speed
         private Vector2 horizontalInput; // stores horizontal movement
 
         [Header("Jump")]
@@ -20,7 +21,13 @@ namespace devlog98.Backdoor {
         [SerializeField] private float gravity = -30f; // custom gravity
         [SerializeField] private float coyoteTimer = 0.2f; // threshold after exitting ground to jump again
         private float canJump; // if character can jump
-        private bool isJumping; // if character is jumping        
+        private bool isJumping; // if character is jumping
+
+        [Header("Crouch")]
+        [SerializeField] private float crouchHeight = 0.5f; // used to scale the character vertically
+        [SerializeField] private float crouchSpeed; // speed to perform crouch action
+        [SerializeField] [Range(0f, 1f)] private float crouchSlowdown; // slowdown when walking and crouching
+        private bool isCrouching; // if character is crouching
 
         [Header("Collisions")]
         [SerializeField] private LayerMask groundMask; // used to check for ground collisions
@@ -34,6 +41,35 @@ namespace devlog98.Backdoor {
         [SerializeField] private MMFeedbacks jumpFeedback;
 
         private void Update() {
+            Walk();
+            Crouch();
+            Jump();
+        }
+
+        private void Walk() {
+            // walk on the ground
+            if ((horizontalInput.x != 0f || horizontalInput.y != 0f) && verticalVelocity.y == 0f) {
+                //animator.SetBool("isWalking", true);
+            }
+            else {
+                //animator.SetBool("isWalking", false);
+            }
+
+            Vector3 horizontalVelocity = (transform.right * horizontalInput.x + transform.forward * horizontalInput.y) * (speed * speedMultiplier);
+            controller.Move(horizontalVelocity * Time.deltaTime);
+        }
+
+        private void Crouch() {
+            // crouch
+            if (isCrouching) {
+                transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(transform.localScale.x, crouchHeight, transform.localScale.z), crouchSpeed * Time.deltaTime);
+            }
+            else {
+                transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one, crouchSpeed * Time.deltaTime);
+            }
+        }
+
+        private void Jump() {
             // reset vertical velocity when grounded
             isGrounded = Physics.CheckSphere(transform.position, groundRadiusCollision, groundMask);
             if (isGrounded) {
@@ -43,17 +79,6 @@ namespace devlog98.Backdoor {
             else {
                 canJump -= Time.deltaTime;
             }
-
-            // walk on the ground
-            if ((horizontalInput.x != 0f || horizontalInput.y != 0f) && verticalVelocity.y == 0f) {
-                //animator.SetBool("isWalking", true);
-            }
-            else {
-                //animator.SetBool("isWalking", false);
-            }
-
-            Vector3 horizontalVelocity = (transform.right * horizontalInput.x + transform.forward * horizontalInput.y) * speed;
-            controller.Move(horizontalVelocity * Time.deltaTime);
 
             // jump
             if (isJumping) {
@@ -77,6 +102,21 @@ namespace devlog98.Backdoor {
             }
             else {
                 horizontalInput = Vector2.zero;
+            }
+        }
+
+        // get crouch input
+        public void OnCrouchPressed() {
+            if (!PlayerLock.instance.IsLocked) {
+                isCrouching = !isCrouching;
+
+                // slowdown base movement if needed
+                if (isCrouching) {
+                    speedMultiplier = crouchSlowdown;
+                }
+                else {
+                    speedMultiplier = 1f;
+                }
             }
         }
 

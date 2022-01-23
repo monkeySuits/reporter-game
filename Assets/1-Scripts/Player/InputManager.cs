@@ -29,6 +29,9 @@ namespace devlog98.Backdoor {
             // horizontal input
             playerMovement.Walk.performed += ctx => horizontalInput = ctx.ReadValue<Vector2>();
 
+            // crouch input
+            playerMovement.Crouch.performed += _ => movement.OnCrouchPressed();
+
             // jump input
             playerMovement.Jump.performed += _ => movement.OnJumpPressed();
 
@@ -36,6 +39,7 @@ namespace devlog98.Backdoor {
             playerMovement.Screenshot.performed += _ => PlayerCamera.instance.ActivateCamera();
             playerMovement.RightClick.started += _ => PlayerCamera.instance.AimCamera();
             playerMovement.RightClick.canceled += _ => PlayerCamera.instance.StopCamera();
+
             // mouse input
             playerMovement.MouseX.performed += ctx => mouseInput.x = ctx.ReadValue<float>();
             playerMovement.MouseY.performed += ctx => mouseInput.y = ctx.ReadValue<float>();
