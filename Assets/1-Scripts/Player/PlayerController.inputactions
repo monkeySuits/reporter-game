@@ -188,6 +188,17 @@
                 },
                 {
                     "name": "",
+                    "id": "f264fb90-b7c0-415e-9e0c-dc78d43072af",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8810b176-68ec-461a-9b1f-ebf5c6718481",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",

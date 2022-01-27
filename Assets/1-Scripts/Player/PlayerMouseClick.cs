@@ -1,5 +1,4 @@
-﻿using Reporter;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 /*
@@ -12,10 +11,13 @@ namespace devlog98.Backdoor {
 
     public class PlayerMouseClick : MonoBehaviour, IMouse {
         [SerializeField] private float maxClickDistance; // distance to be used when raycasting clicks
+        [SerializeField] private float doubleClickThreshold; // speed between clicks to trigger a double click
 
         private Mouse mouse; // reference to current mouse
         private InputAction mouseDrag; // reference to drag action from new Input System
         private IMouse currentDragger; // current object to be dragged
+        private float clickCount; // current clicks executed
+        private float clickTimer; // time between clicks
 
         // mouse clic setup
         public void Initialize(InputAction drag) {
@@ -28,29 +30,45 @@ namespace devlog98.Backdoor {
             mouse = Mouse.current;
             RaycastHit hit;
 
-            // single click
-            currentDragger = this;
-
-            // try to get dragger object on screen
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(mouse.position.ReadValue()), out hit, maxClickDistance)) {
-                // if hit object can be dragged
-                IMouse dragger = hit.collider.gameObject.GetComponent<IMouse>();
-                if (dragger != null) {
-                    currentDragger = dragger;
-                }
+            // reset click if not fast enough
+            if (Time.time > clickTimer) {
+                clickCount = 0;
+                clickTimer = Time.time + doubleClickThreshold;
             }
 
-            // activate dragger object functions
-            currentDragger.OnMouseDown(context);
-            mouseDrag.performed += currentDragger.OnMouseDrag;
+            clickCount++;
+            switch (clickCount) {
+                case 1:
+                    // single click
+                    currentDragger = this;
 
-            // double click
-            if (mouse.clickCount.ReadValue() > 2) {
-                if (Physics.Raycast(Camera.main.ScreenPointToRay(mouse.position.ReadValue()), out hit, maxClickDistance)) {
-                    // if hit object can be double clicked
-                    IDoubleClick doubleClick = hit.collider.gameObject.GetComponent<IDoubleClick>();
-                    doubleClick?.OnDoubleClick();
-                }
+                    // try to get dragger object on screen
+                    if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)), out hit, maxClickDistance)) {
+                        // if hit object can be dragged
+                        IMouse dragger = hit.collider.gameObject.GetComponent<IMouse>();
+                        if (dragger != null) {
+                            currentDragger = dragger;
+                        }
+                    }
+
+                    // activate dragger object functions
+                    currentDragger.OnMouseDown(context);
+                    mouseDrag.performed += currentDragger.OnMouseDrag;
+
+                    break;
+
+                case 2:
+                    // double click
+                    if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)), out hit, maxClickDistance)) {
+                        // if hit object can be double clicked
+                        IDoubleClick doubleClick = hit.collider.gameObject.GetComponent<IDoubleClick>();
+                        doubleClick?.OnDoubleClick();
+                    }
+
+                    // reset click
+                    clickCount = 0;
+
+                    break;
             }
         }
 

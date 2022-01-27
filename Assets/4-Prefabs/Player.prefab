@@ -878,6 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxClickDistance: 4
+  doubleClickThreshold: 0.5
 --- !u!114 &2495079758423199736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1615,6 +1616,10 @@ PrefabInstance:
     - target: {fileID: 2044915160509605591, guid: 477d18f31356c00458103bfd82cf5781, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 40.19995
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485728543887022284, guid: 477d18f31356c00458103bfd82cf5781, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 477d18f31356c00458103bfd82cf5781, type: 3}
