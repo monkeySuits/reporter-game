@@ -11,7 +11,7 @@ namespace devlog98.Backdoor {
 
     public class PlayerInventory : MonoBehaviour {
         public static PlayerInventory instance; // reference to singleton
-        private List<CollectableItem> inventory = new List<CollectableItem>(); // list of collectable items
+        public List<CollectableItem> inventory = new List<CollectableItem>(); // list of collectable items
 
         // singleton setup
         private void Awake() {
@@ -32,6 +32,12 @@ namespace devlog98.Backdoor {
         // returns current inventory
         public List<CollectableItem> Inventory() {
             return inventory;
+        }
+
+        public void RemoveItem(CollectableItem item){
+            if(item != null){
+                inventory.Remove(item);
+            }
         }
     }
 }
