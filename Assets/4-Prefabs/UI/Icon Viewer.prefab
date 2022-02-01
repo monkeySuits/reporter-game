@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 602375386093705357}
   - component: {fileID: 602375386093705354}
   - component: {fileID: 2143259459548354251}
+  - component: {fileID: -4378568254528030589}
   m_Layer: 5
   m_Name: Icon Viewer
-  m_TagString: Untagged
+  m_TagString: ItemUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,6 +93,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 3449172213327625798}
   nameDisplay: {fileID: 8589594835399710768}
+--- !u!114 &-4378568254528030589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602375386093705352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7396950fd7ba50943b9822230888562b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4200583371394647669
 GameObject:
   m_ObjectHideFlags: 0

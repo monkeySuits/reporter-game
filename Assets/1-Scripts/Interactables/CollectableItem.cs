@@ -39,6 +39,14 @@ namespace devlog98.Backdoor {
             return item;
         }
 
+        public int getId(){
+            return item.id;
+        }
+
+        public void Destruir(){
+            Destroy(this.gameObject);
+        }
+
         // unused methods
         public void OnMouseDrag(InputAction.CallbackContext context) { }
         public void OnMouseUp(InputAction.CallbackContext context) { }

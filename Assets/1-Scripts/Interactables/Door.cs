@@ -31,8 +31,12 @@ namespace devlog98.Backdoor {
                     }
                 }
 
-                doorUnlockedFeedback.PlayFeedbacks();
-                doorUnlocked = true;
+                foreach(CollectableItem key in keys){
+                    //PlayerInventory.instance.RemoveItem(key);
+                    doorUnlockedFeedback.PlayFeedbacks();
+                    doorUnlocked = true;
+                    return;
+                }
             }
         }
 

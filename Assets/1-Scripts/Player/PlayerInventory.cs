@@ -36,7 +36,16 @@ namespace devlog98.Backdoor {
 
         public void RemoveItem(CollectableItem item){
             if(item != null){
-                inventory.Remove(item);
+                GameObject[] itensUI;
+                itensUI = GameObject.FindGameObjectsWithTag("ItemUI");
+
+                foreach (GameObject elemento in itensUI) {
+                    if (item.getId() == elemento.GetComponent<ItemReference>()._item.id) {
+                        Destroy(elemento);
+                        inventory.Remove(item);
+                       return;
+                    }
+                }
             }
         }
     }
