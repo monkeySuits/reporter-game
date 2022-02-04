@@ -84,14 +84,6 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
-                },
-                {
-                    "name": "Inventory",
-                    "type": "Button",
-                    "id": "d050818b-bcb0-434b-8f45-96dd1785e90e",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -259,15 +251,31 @@
                     "action": "Crouch",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
+                }
+            ]
+        },
+        {
+            "name": "Inventory",
+            "id": "e8064da3-ee60-422d-8864-b54ac574e8fb",
+            "actions": [
+                {
+                    "name": "OpenDisable",
+                    "type": "Button",
+                    "id": "14fe0f04-2796-4c41-aaf4-376cfd34d368",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
                 {
                     "name": "",
-                    "id": "9f8690e1-5919-4ab4-8cc0-59f8814216e4",
+                    "id": "5054870d-33d1-42f2-8f5c-16c1ea671bed",
                     "path": "<Keyboard>/i",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Inventory",
+                    "action": "OpenDisable",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
