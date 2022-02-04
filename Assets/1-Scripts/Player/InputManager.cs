@@ -54,7 +54,7 @@ namespace devlog98.Backdoor {
             // restart input
             playerMovement.Report.performed += _ => report.Report();
 
-            playerMovement.Inventory.started += _ => CreateInventory.instance.OpenCloase();
+            playerMovement.Inventory.started += _ => CreateInventory.instance.OpenClose();
         }
 
         // send inputs to movement scripts
