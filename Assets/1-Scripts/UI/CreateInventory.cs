@@ -15,6 +15,7 @@ namespace devlog98.Backdoor {
             }
             else {
                 instance = this;
+                gameObject.SetActive(false);
             }
         }
         //Ao iniciar o objeto, verifica a lista de itens do inventario e instancia os widgets
@@ -26,15 +27,25 @@ namespace devlog98.Backdoor {
         }
         //Função para instanciar o widgets
         public void InstantiateElements(){
-            for(int i = 0; i < inventory.Count; i++){
+            if(transform.childCount <= 0){
+                for(int i = 0; i < inventory.Count; i++){
                 (Instantiate(element, transform) as ItemReference).SetValues(
                     inventory[i]);
+                }
             }
         }
         //Adicionar elemento unico
         public void AddElement(CollectableItem item){
             (Instantiate(element, transform) as ItemReference).SetValues(
                     item);
+        }
+
+        public void OpenClose(){
+            if(gameObject.activeSelf){
+                gameObject.SetActive(false);
+            }else{
+                gameObject.SetActive(true);
+            }
         }
     }
 }
