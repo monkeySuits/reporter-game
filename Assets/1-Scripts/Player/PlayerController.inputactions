@@ -253,6 +253,33 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Inventory",
+            "id": "e8064da3-ee60-422d-8864-b54ac574e8fb",
+            "actions": [
+                {
+                    "name": "OpenDisable",
+                    "type": "Button",
+                    "id": "14fe0f04-2796-4c41-aaf4-376cfd34d368",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5054870d-33d1-42f2-8f5c-16c1ea671bed",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenDisable",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
