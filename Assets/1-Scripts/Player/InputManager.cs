@@ -13,11 +13,12 @@ namespace devlog98.Backdoor {
         [SerializeField] private PlayerMovement movement; // reference to player movement script
         [SerializeField] private PlayerMouseLook mouseLook; // reference to mouse look script
         [SerializeField] private PlayerMouseClick mouseClick; // reference to mouse click script
+         [SerializeField] private PlayerLock lockScript; // reference to player lock script
         [SerializeField] private PlayerReport report;
 
         private PlayerController controller; // reference to Input System class
         private PlayerController.PlayerMovementActions playerMovement; // reference to Input System group of inputs
-         private PlayerController.InventoryActions playerInventory; 
+        private PlayerController.InventoryActions playerInventory; 
         private Vector2 horizontalInput; // stores horizontal movement
         private Vector2 mouseInput; // stores mouse movement
         private bool inventory;
@@ -78,16 +79,13 @@ namespace devlog98.Backdoor {
         private void Inventory(){
             CreateInventory.instance.OpenClose();
             inventory = !inventory;
+            lockScript.LockPlayer(inventory);
             Debug.Log("Inventario: " + inventory);
             Movement();
         }
 
         private void Movement(){
-            if(inventory){
-               controller.PlayerMovement.Disable();
-            }else{
                 controller.PlayerMovement.Enable();
-            }
         }
     }
 }
