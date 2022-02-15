@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
-
+using MoreMountains.Feedbacks;
+using FlatKit;
 /*
  * Responsible for mouse interactions with multiple game objects
  */
@@ -18,13 +19,34 @@ namespace devlog98.Backdoor {
         private IMouse currentDragger; // current object to be dragged
         private float clickCount; // current clicks executed
         private float clickTimer; // time between clicks
+        public MMFeedbacks findInteractableReticleFeed;
+        public MMFeedbacks loseInteractableReticleFeed;
+        bool reticleActive = false;
 
         // mouse clic setup
         public void Initialize(InputAction drag) {
             mouse = Mouse.current;
             mouseDrag = drag;
         }
-
+        private void Update() {
+            RaycastHit hit;
+            if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)), out hit, maxClickDistance)) {
+                IMouse dragger = hit.collider.gameObject.GetComponent<IMouse>();
+                if (dragger != null) {
+                    Debug.Log("Looking at Interactable");
+                    if(reticleActive == false){
+                        findInteractableReticleFeed.PlayFeedbacks();
+                        reticleActive = true;
+                    }
+                }
+            }
+            else{
+                if(reticleActive == true){
+                    loseInteractableReticleFeed.PlayFeedbacks();
+                    reticleActive = false;
+                }
+            }
+        }
         // left click events
         public void OnLeftClickStarted(InputAction.CallbackContext context) {
             mouse = Mouse.current;
