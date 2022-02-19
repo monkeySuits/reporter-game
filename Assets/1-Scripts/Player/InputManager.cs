@@ -19,15 +19,18 @@ namespace devlog98.Backdoor {
         private PlayerController controller; // reference to Input System class
         private PlayerController.PlayerMovementActions playerMovement; // reference to Input System group of inputs
         private PlayerController.InventoryActions playerInventory; 
+        private PlayerController.PauseActions playerPause;
         private Vector2 horizontalInput; // stores horizontal movement
         private Vector2 mouseInput; // stores mouse movement
         private bool inventory;
+        private bool pause;
 
         // input manager setup
         private void Awake() {
             controller = new PlayerController();
             playerMovement = controller.PlayerMovement;
             playerInventory = controller.Inventory;
+            playerPause = controller.Pause;
 
             // horizontal input
             playerMovement.Walk.performed += ctx => horizontalInput = ctx.ReadValue<Vector2>();
@@ -59,6 +62,8 @@ namespace devlog98.Backdoor {
 
             //playerMovement.Inventory.started += _ => CreateInventory.instance.OpenClose();
             playerInventory.OpenDisable.started += _ => Inventory();
+
+            playerPause.Execute.started += _ => Pause();
         }
 
         // send inputs to movement scripts
@@ -82,6 +87,12 @@ namespace devlog98.Backdoor {
             lockScript.LockPlayer(inventory);
             Debug.Log("Inventario: " + inventory);
             Movement();
+        }
+
+        private void Pause(){
+            PauseController.instance.PanelController();
+            pause = !pause;
+            lockScript.LockPlayer(pause);
         }
 
         private void Movement(){

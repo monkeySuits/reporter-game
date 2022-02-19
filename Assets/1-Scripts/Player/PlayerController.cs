@@ -293,6 +293,44 @@ public class @PlayerController : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Pause"",
+            ""id"": ""8c42c946-a562-42fa-af34-a1d73c412c2d"",
+            ""actions"": [
+                {
+                    ""name"": ""Execute"",
+                    ""type"": ""Button"",
+                    ""id"": ""fb0c9174-0605-4977-bc82-ae65b0f5c52a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""a1fd35a0-6c84-4d69-a2ef-42d745af81b0"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Execute"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f3099019-8699-417e-a769-586eb0866fb2"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Execute"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -312,6 +350,9 @@ public class @PlayerController : IInputActionCollection, IDisposable
         // Inventory
         m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
         m_Inventory_OpenDisable = m_Inventory.FindAction("OpenDisable", throwIfNotFound: true);
+        // Pause
+        m_Pause = asset.FindActionMap("Pause", throwIfNotFound: true);
+        m_Pause_Execute = m_Pause.FindAction("Execute", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -495,6 +536,39 @@ public class @PlayerController : IInputActionCollection, IDisposable
         }
     }
     public InventoryActions @Inventory => new InventoryActions(this);
+
+    // Pause
+    private readonly InputActionMap m_Pause;
+    private IPauseActions m_PauseActionsCallbackInterface;
+    private readonly InputAction m_Pause_Execute;
+    public struct PauseActions
+    {
+        private @PlayerController m_Wrapper;
+        public PauseActions(@PlayerController wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Execute => m_Wrapper.m_Pause_Execute;
+        public InputActionMap Get() { return m_Wrapper.m_Pause; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PauseActions set) { return set.Get(); }
+        public void SetCallbacks(IPauseActions instance)
+        {
+            if (m_Wrapper.m_PauseActionsCallbackInterface != null)
+            {
+                @Execute.started -= m_Wrapper.m_PauseActionsCallbackInterface.OnExecute;
+                @Execute.performed -= m_Wrapper.m_PauseActionsCallbackInterface.OnExecute;
+                @Execute.canceled -= m_Wrapper.m_PauseActionsCallbackInterface.OnExecute;
+            }
+            m_Wrapper.m_PauseActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Execute.started += instance.OnExecute;
+                @Execute.performed += instance.OnExecute;
+                @Execute.canceled += instance.OnExecute;
+            }
+        }
+    }
+    public PauseActions @Pause => new PauseActions(this);
     public interface IPlayerMovementActions
     {
         void OnWalk(InputAction.CallbackContext context);
@@ -511,5 +585,9 @@ public class @PlayerController : IInputActionCollection, IDisposable
     public interface IInventoryActions
     {
         void OnOpenDisable(InputAction.CallbackContext context);
+    }
+    public interface IPauseActions
+    {
+        void OnExecute(InputAction.CallbackContext context);
     }
 }
