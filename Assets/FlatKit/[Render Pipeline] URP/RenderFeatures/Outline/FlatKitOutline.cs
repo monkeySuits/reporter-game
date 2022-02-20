@@ -189,5 +189,9 @@ public class FlatKitOutline : ScriptableRendererFeature {
         _material.SetFloat(ColorThresholdMin, settings.minColorThreshold);
         _material.SetFloat(ColorThresholdMax, settings.maxColorThreshold);
     }
+
+    public void UpdateOutline(float updatedOutline){
+        _material.SetFloat(Thickness, updatedOutline);
+    }
 }
 }

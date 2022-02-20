@@ -29,7 +29,7 @@ Transform:
   m_Children:
   - {fileID: 4568448165203349813}
   m_Father: {fileID: 4568448165052147607}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4568448165052147605
 GameObject:
@@ -60,8 +60,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4568448165036983383}
   - {fileID: 3297451573300189080}
+  - {fileID: 4568448165036983383}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectFeedback: {fileID: 4568448165203349812}
-  collectHint: "Voc\xEA pegou uma chave."
+  item: {fileID: 0}
 --- !u!1 &4568448165203349819
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7632046325623557053, guid: b04f7c5939082e944948db6398531e8b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7632046325623557053, guid: b04f7c5939082e944948db6398531e8b, type: 3}
       propertyPath: m_LocalPosition.x

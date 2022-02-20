@@ -22,6 +22,9 @@ namespace devlog98.Backdoor {
         public MMFeedbacks findInteractableReticleFeed;
         public MMFeedbacks loseInteractableReticleFeed;
         bool reticleActive = false;
+        public float outlineHighlightScale = 0.5f;
+        public float normalOutline = 0f;
+        Transform previousHit;
 
         // mouse clic setup
         public void Initialize(InputAction drag) {
@@ -33,9 +36,12 @@ namespace devlog98.Backdoor {
             if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)), out hit, maxClickDistance)) {
                 IMouse dragger = hit.collider.gameObject.GetComponent<IMouse>();
                 if (dragger != null) {
-                    Debug.Log("Looking at Interactable");
+                    previousHit = hit.collider.transform.GetChild(0);
+
                     if(reticleActive == false){
                         findInteractableReticleFeed.PlayFeedbacks();
+                        // hit.collider.gameObject.GetComponent<Renderer>().settings.thickness = 10;
+                        previousHit.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), outlineHighlightScale);
                         reticleActive = true;
                     }
                 }
@@ -44,6 +50,8 @@ namespace devlog98.Backdoor {
                 if(reticleActive == true){
                     loseInteractableReticleFeed.PlayFeedbacks();
                     reticleActive = false;
+                    previousHit.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), normalOutline);
+                    previousHit = null;
                 }
             }
         }
