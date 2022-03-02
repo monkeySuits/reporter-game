@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Screenshot
   - Collectable
+  - ItemUI
+  - Interactable
   layers:
   - Default
   - TransparentFX

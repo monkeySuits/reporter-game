@@ -31,17 +31,29 @@ namespace devlog98.Backdoor {
             mouse = Mouse.current;
             mouseDrag = drag;
         }
-        private void Update() {
+        private async void Update() {
             RaycastHit hit;
             if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)), out hit, maxClickDistance)) {
                 IMouse dragger = hit.collider.gameObject.GetComponent<IMouse>();
                 if (dragger != null) {
                     previousHit = hit.collider.transform.GetChild(0);
 
+
                     if(reticleActive == false){
                         findInteractableReticleFeed.PlayFeedbacks();
                         // hit.collider.gameObject.GetComponent<Renderer>().settings.thickness = 10;
-                        previousHit.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), outlineHighlightScale);
+                        if(previousHit.childCount != 0){
+                            for(int i = 0; i < previousHit.childCount; i++){
+                                Transform curObj;
+                                curObj = previousHit.GetChild(i);
+                                if(curObj.GetComponent<Renderer>() != null)                        
+                                    curObj.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), outlineHighlightScale);
+                                Debug.Log("Get child : " + previousHit);
+                            }
+                        }
+                        else{
+                            previousHit.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), outlineHighlightScale);
+                        }
                         reticleActive = true;
                     }
                 }
@@ -50,7 +62,18 @@ namespace devlog98.Backdoor {
                 if(reticleActive == true){
                     loseInteractableReticleFeed.PlayFeedbacks();
                     reticleActive = false;
-                    previousHit.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), normalOutline);
+                    if(previousHit.childCount != 0){
+                        for(int i = 0; i <= previousHit.childCount; i++){
+                            Transform curObj;
+                            curObj = previousHit.GetChild(i);    
+                            if(curObj.GetComponent<Renderer>() != null)                           
+                                curObj.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), normalOutline);
+                        }
+                    }
+                    else{
+                        previousHit.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), normalOutline);
+                    }
+                    // previousHit.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), normalOutline);
                     previousHit = null;
                 }
             }
