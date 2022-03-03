@@ -36,7 +36,7 @@ namespace devlog98.Backdoor {
             if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)), out hit, maxClickDistance)) {
                 IMouse dragger = hit.collider.gameObject.GetComponent<IMouse>();
                 if (dragger != null) {
-                    previousHit = hit.collider.transform.GetChild(0);
+                    previousHit = hit.collider.transform.GetChild(1);
 
 
                     if(reticleActive == false){

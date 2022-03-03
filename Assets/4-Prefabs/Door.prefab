@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7533738049000643422}
+  - component: {fileID: 3432156660415147640}
+  - component: {fileID: 1417819776921761079}
   m_Layer: 6
   m_Name: Door
-  m_TagString: Ground
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +34,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3432156660415147640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533738049000643423}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0280074, y: 1.0139205, z: 1}
+  m_Center: {x: 0.49947298, y: 0.50108504, z: 0}
+--- !u!114 &1417819776921761079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533738049000643423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806db2914404bc145857d144410ff337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: []
+  doorLockedFeedback: {fileID: 7533738049551936874}
+  doorLockedHint: Ache uma chave para abrir a porta.
+  doorUnlockedFeedback: {fileID: 7533738049189697352}
 --- !u!1 &7533738049072366064
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,11 +517,9 @@ GameObject:
   - component: {fileID: 7533738050812537581}
   - component: {fileID: 7533738050812537586}
   - component: {fileID: 7533738050812537587}
-  - component: {fileID: 7533738050812537580}
-  - component: {fileID: 7533738050812537585}
   m_Layer: 6
   m_Name: Model
-  m_TagString: Ground
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -558,32 +587,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7533738050812537580
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7533738050812537582}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7533738050812537585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7533738050812537582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 806db2914404bc145857d144410ff337, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keys: []
-  doorLockedFeedback: {fileID: 7533738049551936874}
-  doorLockedHint: Ache uma chave para abrir a porta.
-  doorUnlockedFeedback: {fileID: 7533738049189697352}
