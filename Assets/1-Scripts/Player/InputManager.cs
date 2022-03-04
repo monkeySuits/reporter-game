@@ -93,6 +93,10 @@ namespace devlog98.Backdoor {
             PauseController.instance.PanelController();
             pause = !pause;
             lockScript.LockPlayer(pause);
+
+            // TODO -> Centralizar essas linhas num script do mouse para evitar repetição
+            Cursor.visible = pause;
+            Cursor.lockState = pause ? CursorLockMode.None : CursorLockMode.Locked;
         }
 
         private void Movement(){
