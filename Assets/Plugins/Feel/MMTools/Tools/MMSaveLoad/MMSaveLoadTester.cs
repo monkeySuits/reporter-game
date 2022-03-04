@@ -4,13 +4,22 @@ using UnityEngine;
 
 namespace MoreMountains.Tools
 {
+
+    [System.Serializable]
+    public class LevelProgressObject
+    {
+        public List<bool> progressionFlags;
+        public List<bool> itemsAcquired;
+    }
+
     /// <summary>
     /// A test object to store data to test the MMSaveLoadManager class
     /// </summary>
     [System.Serializable]
-    public class MMSaveLoadTestObject
+    public class MMSaveLoadSaveObject
     {
-        public List<string> StringList;
+        public List<LevelProgressObject> levels;
+        public int curLevel;
     }
 
     /// <summary>
@@ -20,13 +29,13 @@ namespace MoreMountains.Tools
     {
         [Header("Saved object")]
         /// a test object containing a list of strings to save and load
-        public MMSaveLoadTestObject TestObject;
+        public MMSaveLoadSaveObject SaveObject;
 
         [Header("Save settings")]
         /// the chosen save method (json, encrypted json, binary, encrypted binary)
         public MMSaveLoadManagerMethods SaveLoadMethod = MMSaveLoadManagerMethods.Binary;
         /// the name of the file to save
-        public string FileName = "TestObject";
+        public string FileName = "SaveObject";
         /// the name of the destination folder
         public string FolderName = "MMTest/";
         /// the extension to use
@@ -47,12 +56,12 @@ namespace MoreMountains.Tools
         protected IMMSaveLoadManagerMethod _saveLoadManagerMethod;
 
         /// <summary>
-        /// Saves the contents of the TestObject into a file
+        /// Saves the contents of the saveObject into a file
         /// </summary>
         protected virtual void Save()
         {
             InitializeSaveLoadMethod();
-            MMSaveLoadManager.Save(TestObject, FileName+SaveFileExtension, FolderName);
+            MMSaveLoadManager.Save(SaveObject, FileName+SaveFileExtension, FolderName);
         }
 
         /// <summary>
@@ -61,7 +70,7 @@ namespace MoreMountains.Tools
         protected virtual void Load()
         {
             InitializeSaveLoadMethod();
-            TestObject = (MMSaveLoadTestObject)MMSaveLoadManager.Load(typeof(MMSaveLoadTestObject), FileName + SaveFileExtension, FolderName);
+            SaveObject = (MMSaveLoadSaveObject)MMSaveLoadManager.Load(typeof(MMSaveLoadSaveObject), FileName + SaveFileExtension, FolderName);
         }
 
         /// <summary>

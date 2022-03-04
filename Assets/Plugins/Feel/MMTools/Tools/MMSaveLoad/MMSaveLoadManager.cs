@@ -13,9 +13,9 @@ namespace MoreMountains.Tools
     /// 
     /// How to use (at a minimum) :
     /// 
-    /// Save : MMSaveLoadManager.Save(TestObject, FileName+SaveFileExtension, FolderName);
+    /// Save : MMSaveLoadManager.Save(SaveObject, FileName+SaveFileExtension, FolderName);
     /// 
-    /// Load : TestObject = (YourObjectClass)MMSaveLoadManager.Load(typeof(YourObjectClass), FileName + SaveFileExtension, FolderName);
+    /// Load : SaveObject = (YourObjectClass)MMSaveLoadManager.Load(typeof(YourObjectClass), FileName + SaveFileExtension, FolderName);
     /// 
     /// Delete save : MMSaveLoadManager.DeleteSave(FileName+SaveFileExtension, FolderName);
     /// 
