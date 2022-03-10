@@ -12,6 +12,7 @@ public class TabGroup : MonoBehaviour
     [SerializeField]private Color click;
     [SerializeField]private Color defaut;
     [SerializeField]private List<GameObject> objectsToSwap;
+    [SerializeField]private string firstButton;
     private bool exit;
 
     public void Subscribe(TabButton button){
@@ -74,7 +75,7 @@ public class TabGroup : MonoBehaviour
     public void ViewPause(){
         ResetTabs();
         foreach(TabButton button in tabButtons){
-            if(button.name == "Home"){
+            if(button.name == firstButton){
                 selectedTab = button;
                 selectedTab.background.color = click;
             }
@@ -83,6 +84,6 @@ public class TabGroup : MonoBehaviour
     }
 
     private void Start() {
-        ViewPause();
+        Invoke("ViewPause", 0.05f);
     }
 }
