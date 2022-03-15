@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using MoreMountains.Tools;
 
 public class GoalsDisplay : MonoBehaviour
 {
@@ -14,17 +15,20 @@ public class GoalsDisplay : MonoBehaviour
     public Image artworkImage;
 
     private bool check;
-
+    public Vector2 goalID; // Index do objetivo a ser salvo
+    MMSaveLoadTester saveLoadScript;
     void Start()
     {
         goal.text = goalText;
         artworkImage.sprite = goals.artworkImage;
+        saveLoadScript = GameObject.FindGameObjectWithTag("SaveManager").GetComponent<MMSaveLoadTester>();
     }
 
 //Função responsavel for assinalar o checkbox ao completar o objetivo
     public void Checked(){
         artworkImage.sprite = goals.artworkImageChecked;
         check = true;
+        saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y] = true;
         CheckedEffect();
     }
 //Efeitos
