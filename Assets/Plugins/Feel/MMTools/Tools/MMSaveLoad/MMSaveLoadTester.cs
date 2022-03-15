@@ -58,7 +58,7 @@ namespace MoreMountains.Tools
         /// <summary>
         /// Saves the contents of the saveObject into a file
         /// </summary>
-        protected virtual void Save()
+        public virtual void Save()
         {
             InitializeSaveLoadMethod();
             MMSaveLoadManager.Save(SaveObject, FileName+SaveFileExtension, FolderName);
