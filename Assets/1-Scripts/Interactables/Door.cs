@@ -31,12 +31,9 @@ namespace devlog98.Backdoor {
                     }
                 }
 
-                foreach(CollectableItem key in keys){
-                    //PlayerInventory.instance.RemoveItem(key);
-                    doorUnlockedFeedback.PlayFeedbacks();
-                    doorUnlocked = true;
-                    return;
-                }
+                //PlayerInventory.instance.RemoveItem(key);
+                doorUnlockedFeedback.PlayFeedbacks();
+                doorUnlocked = true;
             }
         }
 
