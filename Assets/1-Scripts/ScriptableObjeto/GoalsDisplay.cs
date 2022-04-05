@@ -28,7 +28,7 @@ public class GoalsDisplay : MonoBehaviour
     public void Checked(){
         artworkImage.sprite = goals.artworkImageChecked;
         check = true;
-        saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y] = true;
+        saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].done = true;
         saveLoadScript.Save();
         CheckedEffect();
     }

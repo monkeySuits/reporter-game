@@ -4,12 +4,24 @@ using UnityEngine;
 
 namespace MoreMountains.Tools
 {
+    [System.Serializable]
+    public class Flags
+    {
+        public string name;
+        public bool done;
+    }
 
+    [System.Serializable]
+    public class ItemsInLevel
+    {
+        public string name;
+        public bool acquired;
+    }
     [System.Serializable]
     public class LevelProgressObject
     {
-        public List<bool> progressionFlags;
-        public List<bool> itemsAcquired;
+        public List<Flags> progressionFlags;
+        public List<ItemsInLevel> itemsInLevel;
     }
 
     /// <summary>
@@ -55,6 +67,9 @@ namespace MoreMountains.Tools
 
         protected IMMSaveLoadManagerMethod _saveLoadManagerMethod;
 
+        private void Start() {
+            Load();
+        }
         /// <summary>
         /// Saves the contents of the saveObject into a file
         /// </summary>
