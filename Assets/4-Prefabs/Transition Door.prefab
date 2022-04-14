@@ -50,6 +50,18 @@ MonoBehaviour:
           m_StringArgument: EP2_Library_Corridor
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7946534083820528059}
+        m_TargetAssemblyTypeName: MarkCheckpoint, Assembly-CSharp
+        m_MethodName: SaveCheckpoint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   StopEvents:
     m_PersistentCalls:
       m_Calls: []
@@ -159,5 +171,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c2ce51367856bd49b72678cc4263225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7946534083820528059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6482137329059364795, guid: abacc2a52e0f35a44856c9de798d2636, type: 3}
+  m_PrefabInstance: {fileID: 4013533186411322880}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d5660d9b1d8ef499c197ea0a630b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

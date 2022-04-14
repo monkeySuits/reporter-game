@@ -32,6 +32,8 @@ namespace MoreMountains.Tools
     {
         public List<LevelProgressObject> levels;
         public int curLevel;
+
+        public Vector3 entryPosition;
     }
 
     /// <summary>

@@ -23057,6 +23057,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8891046029678959840, guid: 749cc378ffe57f44296e9524c4ff0e2f, type: 3}
+      propertyPath: SaveObject.levels.Array.data[0].progressionFlags.Array.data[0].done
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8891046029678959841, guid: 749cc378ffe57f44296e9524c4ff0e2f, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -23306,20 +23310,3 @@ PrefabInstance:
       objectReference: {fileID: 862177338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abacc2a52e0f35a44856c9de798d2636, type: 3}
---- !u!1 &7533738049425650756 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7533738049000643423, guid: abacc2a52e0f35a44856c9de798d2636, type: 3}
-  m_PrefabInstance: {fileID: 7533738049425650755}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7533738049425650757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7533738049425650756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34a3f455ba095c0468f1c21761a9f9dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
