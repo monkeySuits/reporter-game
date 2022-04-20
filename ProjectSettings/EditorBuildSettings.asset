@@ -15,31 +15,22 @@ EditorBuildSettings:
     path: Assets/2-Scenes/EP 1 - Ending Incomplete.unity
     guid: 84997c24121ef214089c036950f99b9b
   - enabled: 1
-    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_Streets.unity
-    guid: 0321241bf741f1146bf22bbb43206b90
-  - enabled: 1
-    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_Library_Corridor.unity
-    guid: 97f05df128e83c247ae62efada2d22ba
-  - enabled: 1
-    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_Library.unity
-    guid: 29029dcd4630f3545ad3c34983b3cdeb
-  - enabled: 1
-    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_Library_Hangar.unity
-    guid: cc3bd3b85a3736146b0b09e837b840d4
-  - enabled: 1
-    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_Bathroom.unity
-    guid: d6f27e5014c95ad4cafdc7b8d4042b7d
-  - enabled: 1
-    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_Classroom.unity
-    guid: 67bafa9d3c7448943a21b67994d63aa0
-  - enabled: 1
     path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_Hall.unity
     guid: 688bd6b29615c4c409a242348f4fa9c9
   - enabled: 1
     path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_PrincipalRoom.unity
     guid: c213aa405ac689a408b89a391b29fbec
   - enabled: 1
-    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_Yard.unity
-    guid: ac3d8345ac4e0ce48b8021be30832323
+    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_Classroom.unity
+    guid: 67bafa9d3c7448943a21b67994d63aa0
+  - enabled: 1
+    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_Library.unity
+    guid: 29029dcd4630f3545ad3c34983b3cdeb
+  - enabled: 1
+    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_LibraryCorridor.unity
+    guid: 97f05df128e83c247ae62efada2d22ba
+  - enabled: 1
+    path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_LibraryHangar.unity
+    guid: cc3bd3b85a3736146b0b09e837b840d4
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 82aad389c43b2f64b9f2ccb22463333e, type: 2}
