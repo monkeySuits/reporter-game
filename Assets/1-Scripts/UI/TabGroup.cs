@@ -27,12 +27,12 @@ public class TabGroup : MonoBehaviour
         if(selectedTab == null || button != selectedTab){
             button.background.color = hover;
         }
-        Debug.Log("Entrou");
+        // Debug.Log("Entrou");
     }
 
     public void OnTabExit(TabButton button){
         ResetTabs();
-        Debug.Log("Saiu");
+        // Debug.Log("Saiu");
     }
 
     public void OnTabSelected(TabButton button){

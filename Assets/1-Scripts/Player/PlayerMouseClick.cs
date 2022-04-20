@@ -48,7 +48,7 @@ namespace devlog98.Backdoor {
                                 curObj = previousHit.GetChild(i);
                                 if(curObj.GetComponent<Renderer>() != null)                        
                                     curObj.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), outlineHighlightScale);
-                                Debug.Log("Get child : " + previousHit);
+                                // Debug.Log("Get child : " + previousHit);
                             }
                         }
                         else{
@@ -65,7 +65,11 @@ namespace devlog98.Backdoor {
                     if(previousHit.childCount != 0){
                         for(int i = 0; i <= previousHit.childCount; i++){
                             Transform curObj;
-                            curObj = previousHit.GetChild(i);    
+                            if(previousHit.GetChild(i) != null)
+                                curObj = previousHit.GetChild(i);
+                            else
+                                curObj = null;    
+
                             if(curObj.GetComponent<Renderer>() != null)                           
                                 curObj.GetComponent<Renderer>().material.SetFloat(Shader.PropertyToID("_OutlineWidth"), normalOutline);
                         }

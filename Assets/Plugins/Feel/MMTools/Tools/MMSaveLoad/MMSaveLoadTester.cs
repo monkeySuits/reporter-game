@@ -33,13 +33,16 @@ namespace MoreMountains.Tools
         public List<LevelProgressObject> levels;
         public int curLevel;
 
-        public Vector3 entryPosition;
+        // Player position (vectors are not serializable)
+        public float posX;
+        public float posY;
+        public float posZ;
     }
 
     /// <summary>
     /// A simple class used in the MMSaveLoadTestScene to test the MMSaveLoadManager class
     /// </summary>
-    public class MMSaveLoadTester : MonoBehaviour
+    public class MMSaveLoadTester : MMPersistentSingleton<MMSaveLoadTester>
     {
         [Header("Saved object")]
         /// a test object containing a list of strings to save and load

@@ -14,7 +14,13 @@ public class MarkCheckpoint : MonoBehaviour
     }
 
     public void SaveCheckpoint(){
-        saveScript.SaveObject.entryPosition = checkpointPos;
+        Transform player = GameObject.FindGameObjectWithTag("Player").transform;
+       saveScript.SaveObject.posX =  checkpointPos.x;
+       saveScript.SaveObject.posY =  checkpointPos.y;
+       saveScript.SaveObject.posZ =  checkpointPos.z;
+
+       saveScript.Save();
     }
+
 
 }

@@ -120,6 +120,10 @@ PrefabInstance:
       propertyPath: objectivesControl
       value: 
       objectReference: {fileID: 2209673654251123859}
+    - target: {fileID: 687577215259424233, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2495079758423199737, guid: 953bfa279c6a347448ff580b9267652d, type: 3}
       propertyPath: m_RootOrder
       value: 1

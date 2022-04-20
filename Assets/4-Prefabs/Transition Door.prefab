@@ -50,6 +50,92 @@ MonoBehaviour:
           m_StringArgument: EP2_Library_Corridor
           m_BoolArgument: 0
         m_CallState: 2
+  StopEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  InitializationEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  ResetEvents:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5026123239898980261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6863444033532987721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66650ffe68eb1f548acc774ac2db1b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Pause
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    InitialDelay: 0
+    CooldownDuration: 0
+    ExcludeFromHoldingPauses: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  PauseDuration: 0.5
+  ScriptDriven: 0
+  AutoResume: 0
+  AutoResumeAfter: 0.25
+--- !u!114 &6612858276670633823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6863444033532987721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a102c1a91e34644aa37f1e4f00c31a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Save Checkpoint
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    InitialDelay: 0
+    CooldownDuration: 0
+    ExcludeFromHoldingPauses: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  PlayEvents:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 7946534083820528059}
         m_TargetAssemblyTypeName: MarkCheckpoint, Assembly-CSharp
         m_MethodName: SaveCheckpoint
@@ -135,11 +221,23 @@ PrefabInstance:
       value: Transition Door
       objectReference: {fileID: 0}
     - target: {fileID: 7533738049189697352, guid: abacc2a52e0f35a44856c9de798d2636, type: 3}
+      propertyPath: Feedbacks.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7533738049189697352, guid: abacc2a52e0f35a44856c9de798d2636, type: 3}
       propertyPath: Feedbacks.Array.data[0]
       value: 
       objectReference: {fileID: 4143558466209557130}
     - target: {fileID: 7533738049189697352, guid: abacc2a52e0f35a44856c9de798d2636, type: 3}
       propertyPath: Feedbacks.Array.data[1]
+      value: 
+      objectReference: {fileID: 6612858276670633823}
+    - target: {fileID: 7533738049189697352, guid: abacc2a52e0f35a44856c9de798d2636, type: 3}
+      propertyPath: Feedbacks.Array.data[2]
+      value: 
+      objectReference: {fileID: 5026123239898980261}
+    - target: {fileID: 7533738049189697352, guid: abacc2a52e0f35a44856c9de798d2636, type: 3}
+      propertyPath: Feedbacks.Array.data[3]
       value: 
       objectReference: {fileID: 2344546470576038246}
     - target: {fileID: 7533738050812537581, guid: abacc2a52e0f35a44856c9de798d2636, type: 3}
