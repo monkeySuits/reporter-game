@@ -32,5 +32,26 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2-Scenes/Levels/EP 2 - School/EP2_School_LibraryHangar.unity
     guid: cc3bd3b85a3736146b0b09e837b840d4
+  - enabled: 1
+    path: Assets/2-Scenes/Levels/EP 3 - Factory/EP3_Factory_Boss.unity
+    guid: 8d278e8c04ce05848bb3588ab450a623
+  - enabled: 1
+    path: Assets/2-Scenes/Levels/EP 3 - Factory/EP3_Factory_Cafeteria.unity
+    guid: 5069e72e747a9b3488338141d2c36806
+  - enabled: 1
+    path: Assets/2-Scenes/Levels/EP 3 - Factory/EP3_Factory_ConveyorBelt.unity
+    guid: 9022a00667ab8bb408ee18a6e7ec8fbf
+  - enabled: 1
+    path: Assets/2-Scenes/Levels/EP 3 - Factory/EP3_Factory_Reception.unity
+    guid: 04bca9a10d06eec4dbdb2ed118ce0b43
+  - enabled: 1
+    path: Assets/2-Scenes/Levels/EP 3 - Factory/EP3_Factory_Shaft.unity
+    guid: b6cd08b858120b34daf835049bdc7b2b
+  - enabled: 1
+    path: Assets/2-Scenes/Levels/EP 3 - Factory/EP3_Factory_Tests.unity
+    guid: aa7f99a7dff786d4b96c3ce3fd42c827
+  - enabled: 1
+    path: Assets/2-Scenes/Levels/EP 3 - Factory/EP3_Factory_Warranty.unity
+    guid: 9bdb5daca8257f447840cc6bb4e47495
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 82aad389c43b2f64b9f2ccb22463333e, type: 2}
