@@ -67,6 +67,70 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_Principal Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].sentenceKey
+      value: School_Principal_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].sentenceKey
+      value: School_Principal_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].sentenceKey
+      value: School_Principal_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].sentenceKey
+      value: School_Principal_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4].sentenceKey
+      value: School_Principal_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5].sentenceKey
+      value: School_Principal_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6].sentenceKey
+      value: School_Principal_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7].sentenceKey
+      value: School_Principal_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6490610302825871026, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.53212196

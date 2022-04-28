@@ -13,28 +13,89 @@ items:
 - key: Guard_3
   value: Circulando, este beco está interditado até segunda ordem…
 
-#Ep 02
+#EPISODE 02 - THE BURNING DESIRE FOR KNOWLEDGE (School)
+#Secretary
+- key: School_Secretary_1
+  value: Peraí Sandra, um minutinho... chegou alguma mãe de aluno aqui...
+- key: School_Secretary_2
+  value: Bom dia. Em que posso te ajud-
+- key: School_Secretary_3
+  value: Ah... você é a repórter gringa... A sala da diretora fica logo aí do lado, e a garota está numa sala de aula no final desse corredor.
+- key: School_Secretary_4
+  value: As duas já estão te esperando faz tempo...
+#Principal
 - key: School_Principal_1
-  value: Minha filha é a melhor aluna da escola! Nem é porque eu dou nota pra ela por ser minha filha!
+  value: Finalmente você chegou! Já não aguentava mais ficar aguardando aqui!
 - key: School_Principal_2
-  value: Ela esqueceu o Passe Livro dela! Devolva pra ela por mim, por favor!
+  value: Eu chamei você para conversar aqui comigo... porque eu estou tão preocupada!
 - key: School_Principal_3
-  value: Não quero que ela brigue comigo pela mãe ficar cuidando dela como bebê...
+  value: Não sei se você já sabe, mas a aluna que você vai entrevistar - a melhor estudante de Vera Cruz... É a minha filha!
+- key: School_Principal_4
+  value: Sim, ela é o meu orgulho! É o tititipopopó da mamãe!!!
+- key: School_Principal_5
+  value: Mas ela às vezes é meio... esquecida, sabe... Então eu não queria que você pressionasse muito ela... Ela fica emburrada!
+- key: School_Principal_6
+  value: Ah! E fala pra ela não esquecer de devolver o livro de Biologia! Tá na bolsa dela!
+- key: School_Principal_7
+  value: Ah! E entrega pra ela o Passe Estudantil que ela tinha esquecido! Sem ele não tem como devolver o livro!
+- key: School_Principal_8
+  value: Ai, acho que minha pressão tá até abaixando...
+#Student
+- key: School_Student_1
+  value: Finalmente você chegou! Já não aguentava mais ficar morgando aqui!
+- key: School_Student_2
+  value: Vamos começar logo essa entrevista! Você vai me perguntar como eu virei a maior aluna do país, não é?
+- key: School_Student_3
+  value: Eu sei um motivo muito simples para isso! Eu gabaritei a Prova Nacional do Conhecimento por. Três. Anos. Consecutivos.
+- key: School_Student_4
+  value: Eu tenho algumas "colegas" que falam que eu só consegui isso porque eu sou a filha da diretora...
+- key: School_Student_5
+  value: Eu vou falar apenas uma coisinha para elas! L-I-V-R-O-S!
+- key: School_Student_6
+  value: Se elas tentassem ler mais e parassem de fofocar tanto, quem sabe elas não tirariam uma nota boa também!
+- key: School_Student_7
+  value: Enquanto isso eu aqui, com esse livro de... "Histórias"... na mão...
+- key: School_Student_8
+  value: Inclusive... já que você desperdiçou o meu tempo atrasando, eu quero que você devolva esse livro de "Biometria" na biblioteca!
+- key: School_Student_9
+  value: Eu ainda tenho muita coisa para estudar hoje!
+#Teacher
+- key: School_Teacher_1
+  value: Ai, eu estou tão orgulhosa da Sônia!!!
+- key: School_Teacher_2
+  value: Ela é meio emburrada, mas... tão inteligente!!! E agora está até famosa sendo entrevistada!!!
+- key: School_Teacher_3
+  value: Ela merece... não é fácil tirar nota máxima na PNC!!!
+#Librarian
+- key: School_Librarian_1
+  value: Olá, tudo bem? Vejo que você é nova por aqui, não?
+- key: School_Librarian_2
+  value: Pensando melhor, talvez não... Peço desculpas, senhorita! Minha memória anda terrível ultimamente!
+- key: School_Librarian_3
+  value: Em todo caso, deixe-me te explicar como funciona o ambiente da biblioteca!
+- key: School_Librarian_4
+  value: Para você devolver o livro emprestado à biblioteca, basta trazê-lo junto com seu Passe Estudantil que eu checo tudo aqui no sistema!
+- key: School_Librarian_5
+  value: ...
+- key: School_Librarian_6
+  value: ... Eu sinto que esqueci de te falar alguma coisa...
+- key: School_Librarian_7
+  value: Em todo caso, qualquer dúvida só me chamar!
 #Library Guard 1
 - key: School_LibraryGuard1_1
   value: Senhorita! Caso veja algum livro não carimbado com o Selo Estudantil, peço para que me avise.
 - key: School_LibraryGuard1_2
   value: Estamos fazendo um processo de... catalogação desses impressos, para facilitar o uso público.
 - key: School_LibraryGuard1_3
-  value: Peço também que não leia tal conteúdo antes de trazer para mim! Deixe que eu pegue o livro e leve para a sala dos fundos da biblioteca para...
+  value: Peço também que não leia tal conteúdo antes de trazer para mim! Deixe que eu pegue o livro e leve para os fundos da biblioteca...
 - key: School_LibraryGuard1_4
-  value: ...armazenamento...
+  value: ...para armazenamento, claro...
 #Library Guard 2
 - key: School_LibraryGuard2_1
-  value: BOOOOOOOM... DIIIIA!!!
+  value: BOOOM!!! DIIIA!!!
 #Library Guard 3
 - key: School_LibraryGuard3_1
-  value: Nem adianta pedir... me foi incumbido de manter essas janelas completamente seladas!
+  value: Nem adianta pedir... me foi incumbido manter essas janelas completamente seladas!
 - key: School_LibraryGuard3_2
   value: Sim, eu sei que tá calor hoje... mas tão ateando fogo no terreno ao lado, e a fumaça tá vindo toda pra cá!
 - key: School_LibraryGuard3_3

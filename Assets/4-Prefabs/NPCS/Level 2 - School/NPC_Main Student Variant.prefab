@@ -11,6 +11,78 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].sentenceKey
+      value: School_Student_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].sentenceKey
+      value: School_Student_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].sentenceKey
+      value: School_Student_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].sentenceKey
+      value: School_Student_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4].sentenceKey
+      value: School_Student_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5].sentenceKey
+      value: School_Student_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6].sentenceKey
+      value: School_Student_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7].sentenceKey
+      value: School_Student_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[8].sentenceKey
+      value: School_Student_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[8].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_RootOrder
       value: 0
