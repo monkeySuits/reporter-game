@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.51131016, g: 0.81776947, b: 0.5624339, a: 1}
+  m_IndirectSpecularColor: {r: 0.5113117, g: 0.81777126, b: 0.5624331, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2634,6 +2634,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transition Door (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7946534083820528059, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
+      propertyPath: checkpointPos.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946534083820528059, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
+      propertyPath: checkpointPos.z
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
 --- !u!1001 &1208606926
@@ -3083,6 +3091,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2344546470576038246, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
+      propertyPath: Label
+      value: Change Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344546470576038246, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
+      propertyPath: Active
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344546470576038246, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
       propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2209673655027896609}
@@ -3093,6 +3109,10 @@ PrefabInstance:
     - target: {fileID: 2344546470576038246, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
       propertyPath: PlayEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: EP2_School_PrincipalRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026123239898980261, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
+      propertyPath: PauseDuration
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6863444033532987726, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3156,6 +3176,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7946534083820528059, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
       propertyPath: checkpointPos.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946534083820528059, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
+      propertyPath: checkpointPos.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

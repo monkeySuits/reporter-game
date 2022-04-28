@@ -3367,6 +3367,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transition Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7946534083820528059, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
+      propertyPath: checkpointPos.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946534083820528059, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
+      propertyPath: checkpointPos.z
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2423e071150d4344bb839f3aee94c9a2, type: 3}
 --- !u!1001 &1851023581

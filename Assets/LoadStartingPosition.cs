@@ -18,6 +18,7 @@ public class LoadStartingPosition : MonoBehaviour
     }
 
 
+    [ContextMenu("Apply new Pos")]
     public void PositionPlayer(){
        MMSaveLoadTester saveScript = GameObject.FindGameObjectWithTag("SaveManager").GetComponent<MMSaveLoadTester>();
        player.transform.position = new Vector3(saveScript.SaveObject.posX, saveScript.SaveObject.posY, saveScript.SaveObject.posZ);
