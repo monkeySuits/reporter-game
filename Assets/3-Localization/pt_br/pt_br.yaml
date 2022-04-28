@@ -20,3 +20,22 @@ items:
   value: Ela esqueceu o Passe Livro dela! Devolva pra ela por mim, por favor!
 - key: School_Principal_3
   value: Não quero que ela brigue comigo pela mãe ficar cuidando dela como bebê...
+#Library Guard 1
+- key: School_LibraryGuard1_1
+  value: Senhorita! Caso veja algum livro não carimbado com o Selo Estudantil, peço para que me avise.
+- key: School_LibraryGuard1_2
+  value: Estamos fazendo um processo de... catalogação desses impressos, para facilitar o uso público.
+- key: School_LibraryGuard1_3
+  value: Peço também que não leia tal conteúdo antes de trazer para mim! Deixe que eu pegue o livro e leve para a sala dos fundos da biblioteca para...
+- key: School_LibraryGuard1_4
+  value: ...armazenamento...
+#Library Guard 2
+- key: School_LibraryGuard2_1
+  value: BOOOOOOOM... DIIIIA!!!
+#Library Guard 3
+- key: School_LibraryGuard3_1
+  value: Nem adianta pedir... me foi incumbido de manter essas janelas completamente seladas!
+- key: School_LibraryGuard3_2
+  value: Sim, eu sei que tá calor hoje... mas tão ateando fogo no terreno ao lado, e a fumaça tá vindo toda pra cá!
+- key: School_LibraryGuard3_3
+  value: Então, zarpando!

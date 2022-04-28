@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7018191, g: 0.99451166, b: 0.7237788, a: 1}
+  m_IndirectSpecularColor: {r: 0.7018177, g: 0.9945105, b: 0.7237769, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -397,7 +397,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7822851243117707093, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
       propertyPath: m_Name
-      value: NPC_Guard (3)
+      value: NPC_Library Guard 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].sentenceKey
+      value: School_LibraryGuard3_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].sentenceKey
+      value: School_LibraryGuard3_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].sentenceKey
+      value: School_LibraryGuard3_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].charWriteTime
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
@@ -516,7 +540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7822851243117707093, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
       propertyPath: m_Name
-      value: NPC_Guard (2)
+      value: NPC_Library Guard 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].sentenceKey
+      value: School_LibraryGuard2_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
@@ -3245,7 +3273,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh35312
+  m_Name: pb_Mesh38068
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3585,7 +3613,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7822851243117707093, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
       propertyPath: m_Name
-      value: NPC_Guard (1)
+      value: NPC_Library Guard 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].sentenceKey
+      value: School_LibraryGuard1_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].sentenceKey
+      value: School_LibraryGuard1_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].sentenceKey
+      value: School_LibraryGuard1_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].sentenceKey
+      value: School_LibraryGuard1_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].charWriteTime
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822851243157533669, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3].charWriteTime
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26c155b94eb766f43920d6ab19b02982, type: 3}
