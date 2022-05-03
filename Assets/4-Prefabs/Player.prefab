@@ -874,8 +874,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 2495079759980539969}
   cameraVerticalClamp: 88
-  sensitivityX: 20
-  sensitivityY: 0.5
+  sensitivityX: 28
+  sensitivityY: 1.2
 --- !u!114 &2495079758423199739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,6 +950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2495079758423199737}
   loadInFeed: {fileID: 6456065656313061832}
+  isDebug: 1
 --- !u!1 &2495079759763268355
 GameObject:
   m_ObjectHideFlags: 0
