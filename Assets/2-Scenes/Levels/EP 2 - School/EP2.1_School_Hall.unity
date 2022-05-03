@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5113117, g: 0.81777126, b: 0.5624331, a: 1}
+  m_IndirectSpecularColor: {r: 0.5113108, g: 0.81776977, b: 0.5624321, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3476,6 +3476,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c439accf2f3d6948a7e356e00b4ffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2209673655027896610 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4326300804774009948, guid: dd8ee007b7d5c534f8520f2e98412167, type: 3}
+  m_PrefabInstance: {fileID: 2209673655027896608}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bfd5da5921784e4c8f8da2e37095016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2217910666717624968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3483,6 +3494,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9131940801837321837, guid: 58229b70d199fc04984f7ae0152ea049, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2209673655027896610}
     - target: {fileID: 9131940802208751225, guid: 58229b70d199fc04984f7ae0152ea049, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3531,6 +3546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_Secretary
       objectReference: {fileID: 0}
+    - target: {fileID: 9131940802953046128, guid: 58229b70d199fc04984f7ae0152ea049, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2209673655027896610}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58229b70d199fc04984f7ae0152ea049, type: 3}
 --- !u!4 &6863444034487951649

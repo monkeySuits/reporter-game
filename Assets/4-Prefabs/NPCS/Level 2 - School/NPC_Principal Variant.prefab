@@ -25,11 +25,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1432963670451468185, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.09
+      value: -6.49
       objectReference: {fileID: 0}
     - target: {fileID: 1432963670451468185, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 1432963670451468185, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
       propertyPath: m_LocalPosition.z
@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1432963670451468189, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
       propertyPath: m_Name
-      value: NPC_Principal Variant
+      value: NPC_Principal
       objectReference: {fileID: 0}
     - target: {fileID: 1432963670474554157, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
       propertyPath: dialogue.sentences.Array.size
@@ -146,6 +146,18 @@ PrefabInstance:
     - target: {fileID: 6490610302825871026, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273892508111810824, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273892508111810824, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273892508111810824, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7314697635167239786, guid: f3421dc39d8f1114da1ba3601d414ded, type: 3}
       propertyPath: m_Size.x

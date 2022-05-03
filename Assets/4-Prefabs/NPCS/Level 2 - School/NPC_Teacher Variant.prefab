@@ -41,7 +41,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.65790176
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -49,19 +49,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.79335415
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.6087605
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -69,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -77,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371254, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_Name
-      value: NPC_Teacher Variant
+      value: NPC_Teacher
       objectReference: {fileID: 0}
     - target: {fileID: 4842604155366194625, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_Size.x
