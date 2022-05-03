@@ -63,7 +63,7 @@ namespace devlog98.Backdoor {
                     loseInteractableReticleFeed.PlayFeedbacks();
                     reticleActive = false;
                     if(previousHit.childCount != 0){
-                        for(int i = 0; i <= previousHit.childCount; i++){
+                        for(int i = 0; i < previousHit.childCount; i++){
                             Transform curObj;
                             if(previousHit.GetChild(i) != null)
                                 curObj = previousHit.GetChild(i);
