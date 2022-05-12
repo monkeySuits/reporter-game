@@ -22,12 +22,6 @@ namespace devlog98.Backdoor {
             else {
                 instance = this;
             }
-            saveManager = GameObject.FindGameObjectWithTag("SaveManager").GetComponent<MMSaveLoadTester>();
-            // for(int i = 0; i < saveManager.SaveObject.levels[saveManager.SaveObject.curLevel].itemsInLevel.Count; i++){
-            //     if(saveManager.SaveObject.levels[saveManager.SaveObject.curLevel].itemsInLevel[i].acquired){
-            //         inventory.Add
-            //     }
-            // }
         }
 
         // store collected item on inventory
