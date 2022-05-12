@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45cf030e2ed0653419a7d43ef1e2d644, type: 3}
   m_Name: School_Book
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: eb0be83d0c5f1124397e0447b1369f9e, type: 3}
+  icon: {fileID: 21300000, guid: b8312ccafe53a6344b74cf4965a69433, type: 3}
   displayName: Book
   description: "Livro de hist\xF3ria."
   collectHint: "Voc\xEA adquiriu um livro de hist\xF3ria."

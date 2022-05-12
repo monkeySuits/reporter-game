@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4568448165052147605, guid: 1906f1621af75cd418fa3b284001a190, type: 3}
       propertyPath: m_Name
-      value: Library Pass Key
+      value: Book Key
       objectReference: {fileID: 0}
     - target: {fileID: 4568448165052147605, guid: 1906f1621af75cd418fa3b284001a190, type: 3}
       propertyPath: m_IsActive
@@ -18,7 +18,7 @@ PrefabInstance:
     - target: {fileID: 4568448165052147606, guid: 1906f1621af75cd418fa3b284001a190, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 11400000, guid: cadbdcb1ccc05004eaebad0c89379c21, type: 2}
+      objectReference: {fileID: 11400000, guid: c8a51bc619f072b409e2e7dfabe1ee40, type: 2}
     - target: {fileID: 4568448165052147607, guid: 1906f1621af75cd418fa3b284001a190, type: 3}
       propertyPath: m_RootOrder
       value: 0
