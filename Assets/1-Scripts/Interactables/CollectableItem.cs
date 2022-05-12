@@ -59,7 +59,7 @@ namespace devlog98.Backdoor
             }
         }
 
-        private void LoadItem()
+        public void LoadItem()
         {
             // Check if item has already been aquired when game Loads
             int length = saveManager.SaveObject.levels[saveManager.SaveObject.curLevel].itemsInLevel.Count;

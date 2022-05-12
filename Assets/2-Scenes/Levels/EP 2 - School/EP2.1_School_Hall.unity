@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5113108, g: 0.81776977, b: 0.5624321, a: 1}
+  m_IndirectSpecularColor: {r: 0.5113117, g: 0.81777126, b: 0.5624331, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3665,3 +3665,60 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &8643753914457156898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.1866274
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.7387893
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9416862
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749569, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643753913643749571, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}
+      propertyPath: m_Name
+      value: Scene Base Saver
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6abcbca32feb29e43880ae464ac5ac0f, type: 3}

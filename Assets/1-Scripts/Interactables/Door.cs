@@ -24,7 +24,7 @@ namespace devlog98.Backdoor {
         [Header("Feedbacks")]
         [SerializeField] private MMFeedbacks doorLockedFeedback; // feedbacks
         [SerializeField] private MMFeedbacks doorUnlockedFeedback;
-        [SerializeField] private MMFeedbacks doorLoadFeedback;
+        // [SerializeField] private MMFeedbacks doorLoadFeedback;
 
         private void Start() {
             flagSaver = this.GetComponent<FlagSaver>();
@@ -58,7 +58,7 @@ namespace devlog98.Backdoor {
                 if (saveManager.SaveObject.levels[saveManager.SaveObject.curLevel].progressionFlags[i].name == flagName)
                 {
                     if(saveManager.SaveObject.levels[saveManager.SaveObject.curLevel].progressionFlags[i].done == true){
-                        doorLoadFeedback.PlayFeedbacks();
+                        // doorLoadFeedback.PlayFeedbacks();
                         doorUnlocked = true;
                         break;
                     }
