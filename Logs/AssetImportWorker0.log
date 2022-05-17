@@ -1618,3 +1618,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 495.406954 seconds.
+  path: Assets/2-Scenes/Levels/EP 3 - Factory/EP3.4_Factory_Warranty.unity
+  artifactKey: Guid(9bdb5daca8257f447840cc6bb4e47495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2-Scenes/Levels/EP 3 - Factory/EP3.4_Factory_Warranty.unity using Guid(9bdb5daca8257f447840cc6bb4e47495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7db2ffad653242fab874b5a0b13cd205') in 0.023896 seconds 
+  Import took 0.369150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.281120 seconds.
+  path: Assets/2-Scenes/Levels/EP 3 - Factory/EP3.3_Factory_Tests.unity
+  artifactKey: Guid(aa7f99a7dff786d4b96c3ce3fd42c827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2-Scenes/Levels/EP 3 - Factory/EP3.3_Factory_Tests.unity using Guid(aa7f99a7dff786d4b96c3ce3fd42c827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c133436a0495f7aa2fb18ad082429b') in 0.005762 seconds 
+  Import took 0.184135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.684270 seconds.
+  path: Assets/4-Prefabs/NPCS/Level 3 - Factory/NPC_Boss Variant.prefab
+  artifactKey: Guid(947caccfc94bec34d998c11c206e6c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4-Prefabs/NPCS/Level 3 - Factory/NPC_Boss Variant.prefab using Guid(947caccfc94bec34d998c11c206e6c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e53fb32f819d64f32b193cd318c9e94') in 1.073468 seconds 
+  Import took 1.172011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.261966 seconds.
+  path: Assets/4-Prefabs/NPCS/Level 3 - Factory/NPC_HelmetHandout Variant.prefab
+  artifactKey: Guid(c9c80b1081c88c14ab29a7d6bf212f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4-Prefabs/NPCS/Level 3 - Factory/NPC_HelmetHandout Variant.prefab using Guid(c9c80b1081c88c14ab29a7d6bf212f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502a5a3473066b62707b4352d14667a2') in 0.031437 seconds 
+  Import took 0.369324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.385021 seconds.
+  path: Assets/4-Prefabs/NPCS/Level 3 - Factory/NPC_HelmetTester Variant.prefab
+  artifactKey: Guid(594dd9eba05e64c4ea268d9d5491bba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4-Prefabs/NPCS/Level 3 - Factory/NPC_HelmetTester Variant.prefab using Guid(594dd9eba05e64c4ea268d9d5491bba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8566c0318cd70011f9c112fa8ade79c') in 0.025035 seconds 
+  Import took 0.438041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.913582 seconds.
+  path: Assets/4-Prefabs/NPCS/Level 3 - Factory/NPC_QualityAssurance Variant.prefab
+  artifactKey: Guid(8d306443c7b85154f91dc055dc3b101b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4-Prefabs/NPCS/Level 3 - Factory/NPC_QualityAssurance Variant.prefab using Guid(8d306443c7b85154f91dc055dc3b101b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a3692a4902abe646120f6503de766ba') in 0.024775 seconds 
+  Import took 0.190917 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
