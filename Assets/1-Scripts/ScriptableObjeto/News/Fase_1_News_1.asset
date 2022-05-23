@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f1c9b8d08562742847c1cd21de5644, type: 3}
+  m_Name: Fase_1_News_1
+  m_EditorClassIdentifier: 
+  headerColor: {r: 0.74533236, g: 0.8584906, b: 0, a: 1}
+  newspaperLogo: {fileID: 0}
+  newspaperName: Hoje dia
+  bodyColor: {r: 0, g: 0.5594597, b: 1, a: 1}
+  photograph: {fileID: 0}
+  title: Cachorro sumiu
+  text: cachorrinho estava na gaiola sendo transportado pela amazonia mas acabu caindo
+    da balsa no meio do tiete

@@ -18,7 +18,15 @@ public class PauseController : MonoBehaviour
     }
 
     public void PanelController(){
-        panel = !panel;
+        PanelSwitch();
         pausePanel.SetActive(panel);
+    }
+
+    public void PanelSwitch(){
+        panel = !panel;
+    }
+
+    public bool Active(){
+        return panel;
     }
 }
