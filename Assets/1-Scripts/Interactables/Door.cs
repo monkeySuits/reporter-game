@@ -31,6 +31,7 @@ namespace devlog98.Backdoor {
             saveManager = GameObject.FindGameObjectWithTag("SaveManager").GetComponent<MMSaveLoadTester>();
             LoadFlag();
         }
+
         public void OnMouseDown(InputAction.CallbackContext context) {
             if (!doorUnlocked) {
                 foreach (CollectableItem key in keys) {
@@ -40,13 +41,14 @@ namespace devlog98.Backdoor {
                         return;
                     }
                 }
-                //PlayerInventory.instance.RemoveItem(key);
-                doorUnlockedFeedback.PlayFeedbacks();
-                doorUnlocked = true;
-
-                // Set flag status then save
-                flagSaver.SaveFlag(flagName);
             }
+
+            // Set flag status then save
+            flagSaver.SaveFlag(flagName);
+
+            //PlayerInventory.instance.RemoveItem(key);
+            doorUnlocked = true;
+            doorUnlockedFeedback.PlayFeedbacks();
         }
 
         public void LoadFlag(){
@@ -62,7 +64,6 @@ namespace devlog98.Backdoor {
                         doorUnlocked = true;
                         break;
                     }
-
                 }
             }
         }

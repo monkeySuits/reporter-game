@@ -907,6 +907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: []
+  saveManager: {fileID: 0}
 --- !u!114 &2969801058444555580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3115,7 +3116,7 @@ MonoBehaviour:
   SafeMode: 3
   Direction: 0
   AutoChangeDirectionOnEnd: 0
-  AutoPlayOnStart: 0
+  AutoPlayOnStart: 1
   AutoPlayOnEnable: 0
   DurationMultiplier: 1
   DisplayFullDurationDetails: 0
