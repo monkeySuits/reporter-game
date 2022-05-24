@@ -18,10 +18,18 @@ public class NewsController : MonoBehaviour
 
     private bool action;
 
+    private void Start() {
+        //Enviar Scriptableobjects nas noticias
+        stateNews.GetComponent<NewsDisplay>().GetNews(objectivesControl.MandatoryNews());
+        anonymousNews.GetComponent<NewsDisplay>().GetNews(objectivesControl.OptionalNews());
+    }
+
     public void Publish(){
+        //Consultar se os objetivos foram cumpridos
         fixedObjectives = objectivesControl.checkFixedObjectives();
         optionalObjectives = objectivesControl.checkOptionalObjectives();
         Closed();
+        //Ativar a hud com base nos objetivos
         if(fixedObjectives || optionalObjectives){
             if(fixedObjectives && optionalObjectives){
                 stateNews.SetActive(true);
@@ -41,6 +49,7 @@ public class NewsController : MonoBehaviour
         action = true;
     }
 
+    //Desativar doas as noticias
     public void Closed(){
         stateNews.SetActive(false);
         anonymousNews.SetActive(false);
@@ -49,6 +58,7 @@ public class NewsController : MonoBehaviour
         action = false;
     }
 
+    //Retonar o status atual das Noticias
     public bool Active(){
         return action;
     }

@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f1c9b8d08562742847c1cd21de5644, type: 3}
   m_Name: Fase_1_News_1
   m_EditorClassIdentifier: 
-  headerColor: {r: 0.74533236, g: 0.8584906, b: 0, a: 1}
+  headerColor: {r: 0.0049644005, g: 0.3584906, b: 0.0016909974, a: 1}
   newspaperLogo: {fileID: 0}
-  newspaperName: Hoje dia
-  bodyColor: {r: 0, g: 0.5594597, b: 1, a: 1}
+  newspaperName: Vera Cruz Diaria
+  bodyColor: {r: 0.4016999, g: 0.4811321, b: 0.4288757, a: 1}
   photograph: {fileID: 0}
-  title: Cachorro sumiu
-  text: cachorrinho estava na gaiola sendo transportado pela amazonia mas acabu caindo
-    da balsa no meio do tiete
+  title: Vandalismo
+  text: "Um v\xE2ndalo fez uma picha\xE7\xE3o numa est\xE1tua comemorativa de um
+    dos antigos l\xEDderes de Vera Cruz. A pol\xEDcia j\xE1 cuidou do problema, tratando
+    de vigiar o monumento enquanto a limpeza dele \xE9 feita."

@@ -6,6 +6,7 @@ using devlog98.Backdoor;
 public class CanvasController : MonoBehaviour
 {
     private Transform news;
+    private Transform background;
     public static CanvasController instance;
     void Start()
     {
@@ -14,20 +15,25 @@ public class CanvasController : MonoBehaviour
         }else {
                 instance = this;
         }
-
+        //Obter os transforms child do Canvas
         news = transform.Find("News/Center/Center");
+        background = transform.Find("Background");
     }
 
+    //Controlador da HUD News
     public void News(){
         if(news.GetComponent<NewsController>().Active()){
             news.GetComponent<NewsController>().Closed();
             Mouse(false);
+            BackgroundController(false);
         }else{       
             news.GetComponent<NewsController>().Publish();
             Mouse(true);
+            BackgroundController(true);
         }
     }
 
+    //Controlador do Mouse e PlayerLock
     private void Mouse(bool enable){
         Cursor.visible = enable;
         PlayerLock.instance.LockPlayer(enable);
@@ -36,5 +42,10 @@ public class CanvasController : MonoBehaviour
         }else{
             Cursor.lockState = CursorLockMode.Locked;
         }
+    }
+
+    //Controlador do Background
+    private void BackgroundController(bool enable){
+        background.gameObject.SetActive(enable);
     }
 }

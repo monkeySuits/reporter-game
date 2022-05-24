@@ -7,6 +7,10 @@ public class ObjectivesControl : MonoBehaviour
     [Header("Goals")]
     [SerializeField] private GameObject[] fixedObjectives;
     [SerializeField] private GameObject[] optionalObjectives;
+    [Header("News")]
+    [SerializeField] private News mandatoryNews;
+    [SerializeField] private News optionalNews;
+
 
 //Verifica se o player completou o objetivo obrigatório
     public bool checkFixedObjectives(){
@@ -33,5 +37,15 @@ public class ObjectivesControl : MonoBehaviour
             }
         }
         return true;
+    }
+
+//Retorna o ScriptableObject da noticia obrigatória
+    public News MandatoryNews(){
+        return mandatoryNews;
+    }
+
+//Retorna o ScriptableObject da noticia opcional
+    public News OptionalNews(){
+        return optionalNews;
     }
 }

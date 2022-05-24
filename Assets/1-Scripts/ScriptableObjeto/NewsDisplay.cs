@@ -17,7 +17,7 @@ public class NewsDisplay : MonoBehaviour
     public Image photograph;
     public TextMeshProUGUI title;
     public TextMeshProUGUI text;
-    // Start is called before the first frame update
+    // Preencher a Hud com as informações do ScriptableObject
     void Start()
     {
         headerColor.color = news.headerColor;
@@ -27,6 +27,11 @@ public class NewsDisplay : MonoBehaviour
         photograph.sprite = news.photograph;
         title.text = news.title;
         text.text = news.text;
+    }
+
+    //Receber o ScriptableObject ta noticia
+    public void GetNews(News getNews){
+        news = getNews;
     }
 
 }
