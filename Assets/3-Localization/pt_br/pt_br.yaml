@@ -81,6 +81,32 @@ items:
   value: ... Eu sinto que esqueci de te falar alguma coisa...
 - key: School_Librarian_7
   value: Em todo caso, qualquer dúvida só me chamar!
+
+- key: School_Librarian_wPass_1
+  value: Ah! Vejo que está com o seu Passe Estudantil! Muito bom!
+- key: School_Librarian_wPass_2
+  value: Embora você não tenha trazido nenhum livro para devolver...
+- key: School_Librarian_wPass_3
+  value: Nesse caso acredito não poder te ajudar muito, senhorita!
+
+- key: School_Librarian_wBook_1
+  value: Já está com o livro em mãos, não? Ótimo!
+- key: School_Librarian_wBook_2
+  value: Você só precisa apresentar seu Passe Estudantil e eu lido com o resto!
+
+- key: School_Librarian_wKeys_1
+  value: Perfeito! Nós podemos começar o processo de devolução! Permita-me acessar o sistema aqui...
+- key: School_Librarian_wKeys_2
+  value: ...Hm...
+- key: School_Librarian_wKeys_3
+  value: Que estranho... o sistema está mostrando que seu Passe Estudantil venceu há três anos...
+- key: School_Librarian_wKeys_4
+  value: Porém como você conseguiu emprestar o livro se o Passe estava desatualizado? Não, não... Alguém deve ter configurado uma data errada!
+- key: School_Librarian_wKeys_5
+  value: Se me permite, senhorita... Eu vou verificar os documentos impressos nos nossos arquivos aqui atrás e já volto!
+- key: School_Librarian_wKeys_6
+  value: Afinal, eu sou da velha guarda! Eu me entendo com papelada, mas computador não é para mim...
+
 #Library Guard 1
 - key: School_LibraryGuard1_1
   value: Senhorita! Caso veja algum livro não carimbado com o Selo Estudantil, peço para que me avise.
