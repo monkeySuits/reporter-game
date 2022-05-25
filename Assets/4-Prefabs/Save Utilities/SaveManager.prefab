@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f9c048a89d0d5448bf5972cdc13fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AutomaticallyUnparentOnAwake: 1
   SaveObject:
     levels:
     - progressionFlags:
@@ -56,8 +57,17 @@ MonoBehaviour:
         done: 0
       - name: 
         done: 0
-      itemsInLevel: []
+      itemsInLevel:
+      - name: Book
+        acquired: 0
+      - name: Library Pass
+        acquired: 0
+      - name: Password
+        acquired: 0
     curLevel: 0
+    posX: 0
+    posY: 0
+    posZ: 0
   SaveLoadMethod: 2
   FileName: TestObject
   FolderName: MMTest/
