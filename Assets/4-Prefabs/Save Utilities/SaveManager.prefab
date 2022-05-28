@@ -53,9 +53,13 @@ MonoBehaviour:
       - name: Key 1
         acquired: 0
     - progressionFlags:
-      - name: 
+      - name: Talk Principal
         done: 0
-      - name: 
+      - name: Talk Student
+        done: 0
+      - name: Photo Student
+        done: 0
+      - name: Photo Books
         done: 0
       itemsInLevel:
       - name: Book
