@@ -72,9 +72,11 @@ namespace MoreMountains.Tools
 
         protected IMMSaveLoadManagerMethod _saveLoadManagerMethod;
 
-        private void Start() {
+        protected override void Awake () {
+            base.Awake();
             Load();
         }
+
         /// <summary>
         /// Saves the contents of the saveObject into a file
         /// </summary>
