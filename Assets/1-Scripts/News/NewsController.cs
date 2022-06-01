@@ -10,18 +10,27 @@ public class NewsController : MonoBehaviour
     [SerializeField] private GameObject anonymousNews;
     [SerializeField] private GameObject DefaultNews;
     [SerializeField] private GameObject textDefault;
+    [SerializeField] private GameObject Notepad;
     [Header("Data")]
     [SerializeField] private ObjectivesControl objectivesControl;
 
     private bool fixedObjectives;
     private bool optionalObjectives;
+    private News mandatoryNews;
+    private News optionalNews;
 
     private bool action;
 
     private void Start() {
         //Enviar Scriptableobjects nas noticias
-        stateNews.GetComponent<NewsDisplay>().GetNews(objectivesControl.MandatoryNews());
-        anonymousNews.GetComponent<NewsDisplay>().GetNews(objectivesControl.OptionalNews());
+        if(objectivesControl){
+            mandatoryNews = objectivesControl.MandatoryNews();
+            optionalNews = objectivesControl.OptionalNews();
+            stateNews.GetComponent<NewsDisplay>().GetNews(mandatoryNews);
+            anonymousNews.GetComponent<NewsDisplay>().GetNews(objectivesControl.OptionalNews());
+        }else{
+            Debug.Log("Adicionar o prefab com o controle dos objetivos");
+        }
     }
 
     public void Publish(){
@@ -61,5 +70,13 @@ public class NewsController : MonoBehaviour
     //Retonar o status atual das Noticias
     public bool Active(){
         return action;
+    }
+    //Retonar a noticia escolhida
+    public void MandatoryNews(){
+        Notepad.GetComponent<Notepad>().GetNews(mandatoryNews);
+    }
+
+    public void OptionalNews(){
+        Notepad.GetComponent<Notepad>().GetNews(optionalNews);
     }
 }

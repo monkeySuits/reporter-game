@@ -21,3 +21,7 @@ MonoBehaviour:
   text: "Um v\xE2ndalo fez uma picha\xE7\xE3o numa est\xE1tua comemorativa de um
     dos antigos l\xEDderes de Vera Cruz. A pol\xEDcia j\xE1 cuidou do problema, tratando
     de vigiar o monumento enquanto a limpeza dele \xE9 feita."
+  note: "\u25CF Publiquei a noticia com sucesso.  Observa\xE7\xE3o: O Estado de Vera
+    Cruz achou meu trabalho extremamente pertinente.  Contudo, estou sentindo que
+    deixei passar algum fato crucial na minha investiga\xE7\xE3o..."
+  choice: bad

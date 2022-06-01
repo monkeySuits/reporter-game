@@ -22,3 +22,7 @@ MonoBehaviour:
     Em retalha\xE7\xE3o, a pol\xEDcia encontrou o perpetrador e o matou. O corpo
     foi encontrado em um beco pr\xF3ximo ao local do protesto. As autoridades locais
     n\xE3o se pronunciaram a respeito do ocorrido."
+  note: "\u25CF Enviei os fatos para a sede do meu jornal no meu pa\xEDs de origem. 
+    Observa\xE7\xE3o: O Estado de Vera Cruz prontamente denunciou a mat\xE9ria feita
+    como \"not\xEDcias falsas\", acredito que est\xE3o suspeitando de mim..."
+  choice: good

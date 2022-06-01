@@ -15,4 +15,8 @@ public class News : ScriptableObject
     public Sprite photograph;
     public string title;
     public string text;
+    [Header("Notepad")]
+    public string note;
+    [Header("Good or Bad")]
+    public string choice;
 }

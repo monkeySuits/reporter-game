@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9e17ca9072f400046877dc15bde16529
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Gapstown AH
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ed8d1ce5dd22e564ba959a2dfd09692c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
