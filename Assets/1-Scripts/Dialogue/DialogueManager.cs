@@ -59,13 +59,14 @@ namespace MSuits.Dialogue {
 
         // continue dialogue
         public void NextSentence() {
-            if (Time.time > currentSentenceDuration) {
+            // if (Time.time > currentSentenceDuration) {
+
                 // show whole sentence if a sentence is already being written
-                //if (writingSentence) {
-                //    StopCoroutine("SentenceCoroutine");
-                //    ShowSentence();
-                //    return;
-                //}
+                if (writingSentence) {
+                   StopCoroutine("SentenceCoroutine");
+                   ShowSentence();
+                   return;
+                }
 
                 // end dialogue if there are no more sentences left
                 if (dialogueSentences.Count == 0) {
@@ -79,10 +80,15 @@ namespace MSuits.Dialogue {
                 // get next sentence
                 sentence = dialogueSentences.Dequeue();
 
+                if(sentence.onPlayEvent != null)
+                {
+                    sentence.onPlayEvent.Invoke();
+                }
+                
                 // show sentence on screen
                 StopCoroutine("SentenceCoroutine");
                 StartCoroutine("SentenceCoroutine");
-            }
+            // }
         }        
 
         // show sentence one char at a time using its specific attributes
@@ -134,6 +140,12 @@ namespace MSuits.Dialogue {
             }
 
             writingSentence = false;
+
+            // if(sentence.onEndEvent != null)
+            // {
+            //     sentence.onEndEvent.Invoke();
+            // }
+
         }
 
         // used to reset dialogue UI

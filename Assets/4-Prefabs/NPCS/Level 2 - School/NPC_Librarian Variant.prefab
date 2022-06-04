@@ -281,36 +281,57 @@ MonoBehaviour:
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_2
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_3
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_4
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_5
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_6
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_7
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &1962678065211213978
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,36 +934,57 @@ MonoBehaviour:
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_2
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_3
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_4
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_5
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_6
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_7
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &4206651032078353312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,16 +1081,25 @@ MonoBehaviour:
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_wPass_2
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_wPass_3
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &4484237785074229231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,31 +1285,49 @@ MonoBehaviour:
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_wKeys_2
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_wKeys_3
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_wKeys_4
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_wKeys_5
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_wKeys_6
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &5024361038032190708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,11 +1713,17 @@ MonoBehaviour:
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
     - sentencePortrait: {fileID: 0}
       sentenceKey: School_Librarian_wBook_2
       dialogueBoxType: 0
       dialogueTextSide: 0
       charWriteTime: 0.03
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &9193437325775841804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,6 +1949,14 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7042254403658586873, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: Feedbacks.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042254403658586873, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: Feedbacks.Array.data[2]
+      value: 
+      objectReference: {fileID: 7089983678314591060}
     - target: {fileID: 8981342874902459673, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -1892,13 +1975,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d75444b350064342bf4c4197766205b, type: 3}
---- !u!4 &1498559127814734052 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3843132550666235937, guid: 4d75444b350064342bf4c4197766205b, type: 3}
-  m_PrefabInstance: {fileID: 2422513455646027973}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1498559128376231159 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+  m_PrefabInstance: {fileID: 2422513455646027973}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7089983678314591060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4898458100478018449, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+  m_PrefabInstance: {fileID: 2422513455646027973}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66650ffe68eb1f548acc774ac2db1b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1498559127814734052 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3843132550666235937, guid: 4d75444b350064342bf4c4197766205b, type: 3}
   m_PrefabInstance: {fileID: 2422513455646027973}
   m_PrefabAsset: {fileID: 0}

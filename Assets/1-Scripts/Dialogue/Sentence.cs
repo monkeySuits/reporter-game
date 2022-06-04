@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 /*
  * data for every single written line delivered on cutscenes and their delivery
@@ -23,5 +24,10 @@ namespace MSuits.Dialogue {
         public float CharWriteTime { get => charWriteTime == 0 ? defaultCharWriteTime : charWriteTime; }
         public DialogueBoxType DialogueBoxType { get => dialogueBoxType; }
         public DialogueTextSide DialogueTextSide { get => dialogueTextSide; }
+
+        [Header("Events")]
+        public UnityEvent onPlayEvent;
+        public UnityEvent onEndEvent;
+
     }
 }
