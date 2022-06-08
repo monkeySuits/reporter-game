@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Events;
+using MoreMountains.Feedbacks;
 
 /*
  * data for every single written line delivered on cutscenes and their delivery
@@ -16,12 +17,14 @@ namespace MSuits.Dialogue {
         [SerializeField] private DialogueBoxType dialogueBoxType; // which dialogue box is going to appear on sentence
         [SerializeField] private DialogueTextType dialogueTextType; // from which side must the sentence appear
         [SerializeField] private float charWriteTime = 0.05f; // how many seconds for a single char to be written
+        [SerializeField] public MMFeedbacks talkFeed; // how many seconds for a single char to be written
         private const float defaultCharWriteTime = 0.05f;
 
         public string SentenceKey { get => sentenceKey; }
         public float CharWriteTime { get => charWriteTime == 0 ? defaultCharWriteTime : charWriteTime; }
         public DialogueBoxType DialogueBoxType { get => dialogueBoxType; }
         public DialogueTextType DialogueTextType { get => dialogueTextType; }
+        public MMFeedbacks TalkFeed { get => talkFeed;}
 
         [Header("Events")]
         public UnityEvent onPlayEvent;

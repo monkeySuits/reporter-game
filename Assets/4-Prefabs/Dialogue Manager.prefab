@@ -222,17 +222,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5c808f84c4a814b9d51c42d05e6952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumSentenceDuration: 0.1
   dialogueUI: {fileID: 4578257817835062084}
   dialogueBoxes:
   - type: 0
     image: {fileID: 4578257817686372699}
   dialogueTexts:
-  - side: 0
-    text: {fileID: 4578257819074593701}
-    portrait: {fileID: 4578257819737012766}
+  - text: {fileID: 4578257819074593701}
+    type: 0
     talkFeed: {fileID: 0}
     tAnimPlayer: {fileID: 5664396874142097448}
+  sentence:
+    sentenceKey: 
+    dialogueBoxType: 0
+    dialogueTextType: 0
+    charWriteTime: 0.05
+    talkFeed: {fileID: 0}
+    onPlayEvent:
+      m_PersistentCalls:
+        m_Calls: []
   onEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -262,6 +269,7 @@ GameObject:
   - component: {fileID: 4578257819074593701}
   - component: {fileID: 4699331044879915662}
   - component: {fileID: 5664396874142097448}
+  - component: {fileID: 381437034483738684}
   m_Layer: 5
   m_Name: Text Regular
   m_TagString: Untagged
@@ -487,13 +495,37 @@ MonoBehaviour:
       m_Calls: []
   onCharacterVisible:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 381437034483738684}
+        m_TargetAssemblyTypeName: FindNPCTalkFeedback, Assembly-CSharp
+        m_MethodName: PlayCurrentNPCTalkingFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   waitForNormalChars: 0.03
   waitLong: 0.1
   waitMiddle: 0.07
   avoidMultiplePunctuactionWait: 0
   waitForNewLines: 1
   waitForLastCharacter: 1
+--- !u!114 &381437034483738684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4578257819074593696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b888ffcf473d4e438e5008fc9d13def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4578257819737012767
 GameObject:
   m_ObjectHideFlags: 0

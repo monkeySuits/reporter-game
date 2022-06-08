@@ -34,7 +34,7 @@ namespace MSuits.Dialogue
 
         private Queue<Sentence> dialogueSentences = new Queue<Sentence>(); // current dialogue sentences
 
-        private Sentence sentence; // sentence being shown on screen
+        public Sentence sentence; // sentence being shown on screen
 
         private bool writingSentence; // if sentence is being written on screen
 
