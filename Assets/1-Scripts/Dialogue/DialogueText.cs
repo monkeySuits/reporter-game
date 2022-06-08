@@ -2,6 +2,8 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using MoreMountains.Feedbacks;
+using Febucci.UI;
 
 /*
  * Used to differentiate in which side the text must be written on the screen
@@ -9,16 +11,18 @@ using UnityEngine.UI;
  */
 
 namespace MSuits.Dialogue {
-    public enum DialogueTextSide { Regular }
+    public enum DialogueTextType { Regular }
 
     [Serializable]
     public class DialogueText {
-        [SerializeField] private DialogueTextSide side;
         [SerializeField] private TextMeshProUGUI text;
-        [SerializeField] private Image portrait;
+        [SerializeField] private DialogueTextType type;
+        [SerializeField] private MMFeedbacks talkFeed;
+        [SerializeField] private TextAnimatorPlayer tAnimPlayer;
 
-        public DialogueTextSide Side { get => side; }
+        public DialogueTextType Type { get => type; }
         public TextMeshProUGUI Text { get => text; }
-        public Image Portrait { get => portrait; }
+        public MMFeedbacks TalkFeed { get => talkFeed; }
+        public TextAnimatorPlayer TAnimPlayer { get => tAnimPlayer; }
     }
 }

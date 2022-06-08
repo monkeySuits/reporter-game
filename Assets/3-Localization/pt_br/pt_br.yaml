@@ -94,6 +94,8 @@ items:
 - key: School_Librarian_wBook_2
   value: Você só precisa apresentar seu Passe Estudantil e eu lido com o resto!
 
+- key: School_Librarian_wKeys_0
+  value: Perfeito! Nós podemos começar o processo de devolução! Permita-me acessar o sistema aqui...
 - key: School_Librarian_wKeys_1
   value: Perfeito! Nós podemos começar o processo de devolução! Permita-me acessar o sistema aqui...
 - key: School_Librarian_wKeys_2

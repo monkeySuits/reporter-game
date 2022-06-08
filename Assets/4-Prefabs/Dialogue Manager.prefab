@@ -231,6 +231,11 @@ MonoBehaviour:
   - side: 0
     text: {fileID: 4578257819074593701}
     portrait: {fileID: 4578257819737012766}
+    talkFeed: {fileID: 0}
+    tAnimPlayer: {fileID: 5664396874142097448}
+  onEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4578257818753955812
 MonoBehaviour:
   m_ObjectHideFlags: 0
