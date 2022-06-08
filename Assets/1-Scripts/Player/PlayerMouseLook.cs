@@ -14,7 +14,7 @@ namespace devlog98.Backdoor {
         private float verticalRotation; // stores camera rotation
 
         [SerializeField] private float sensitivityX = 8f; // mouse sensitivity on x and y axis
-        [SerializeField] private float sensitivityY = 0.5f;
+        [SerializeField] private float sensitivityY = 8f;
         private float mouseX, mouseY; // stores mouse movement
         
         private void Start() {
@@ -28,7 +28,7 @@ namespace devlog98.Backdoor {
             transform.Rotate(Vector3.up, mouseX * Time.deltaTime);
 
             // rotate main camera vertically
-            verticalRotation -= mouseY;
+            verticalRotation -= mouseY * Time.deltaTime;
             verticalRotation = Mathf.Clamp(verticalRotation, -cameraVerticalClamp, cameraVerticalClamp);
 
             Vector3 targetRotation = transform.eulerAngles;
@@ -39,8 +39,8 @@ namespace devlog98.Backdoor {
         // get mouse input
         public void ReceiveInput(Vector2 mouseInput) {
             if (!PlayerLock.instance.IsLocked) {
-                mouseX = mouseInput.x * sensitivityX;
-                mouseY = mouseInput.y * sensitivityY;
+                mouseX = mouseInput.x *sensitivityX;
+                mouseY = mouseInput.y *sensitivityY;
             }
             else {
                 mouseX = 0f;

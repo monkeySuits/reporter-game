@@ -12,12 +12,6 @@ namespace MSuits.Dialogue
     {
         public static DialogueManager instance; // singleton
 
-        [Header("Properties")]
-        [SerializeField]
-        private float minimumSentenceDuration; // minimum amount of seconds to wait before next sentence
-
-        private float currentSentenceDuration = -1;
-
         [Header("Canvas")]
         [SerializeField]
         private GameObject dialogueUI; // all elements that form dialogue canvas
