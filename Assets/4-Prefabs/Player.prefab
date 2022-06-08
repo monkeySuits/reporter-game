@@ -875,7 +875,7 @@ MonoBehaviour:
   playerCamera: {fileID: 2495079759980539969}
   cameraVerticalClamp: 88
   sensitivityX: 28
-  sensitivityY: 1.2
+  sensitivityY: 28
 --- !u!114 &2495079758423199739
 MonoBehaviour:
   m_ObjectHideFlags: 0

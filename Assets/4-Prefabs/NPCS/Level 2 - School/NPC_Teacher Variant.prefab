@@ -12,6 +12,18 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].talkFeed
+      value: 
+      objectReference: {fileID: 2983190746752451684}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].talkFeed
+      value: 
+      objectReference: {fileID: 2983190746752451684}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].talkFeed
+      value: 
+      objectReference: {fileID: 2983190746752451684}
+    - target: {fileID: 3843132550097287302, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: dialogue.sentences.Array.data[0].sentenceKey
       value: School_Teacher_1
       objectReference: {fileID: 0}
@@ -77,7 +89,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3843132550120371254, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_Name
-      value: NPC_Teacher
+      value: NPC_Teacher Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550860980795, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550860980795, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550860980795, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 9040309035842931424}
+    - target: {fileID: 3843132550860980795, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550860980795, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayFeedbacks
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550860980795, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MoreMountains.Feedbacks.MMFeedbacks, MoreMountains.Feedbacks
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843132550860980795, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4842604155366194625, guid: 4d75444b350064342bf4c4197766205b, type: 3}
       propertyPath: m_Size.x
@@ -113,3 +153,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+--- !u!114 &2983190746752451684 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8501429423246828557, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+  m_PrefabInstance: {fileID: 6673570663858954345}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b72de2996c5c40bfb394f3d0e0a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9040309035842931424 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2443457895416457865, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+  m_PrefabInstance: {fileID: 6673570663858954345}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b72de2996c5c40bfb394f3d0e0a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

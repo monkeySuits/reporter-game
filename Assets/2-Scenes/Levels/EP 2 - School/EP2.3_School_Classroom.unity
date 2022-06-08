@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.34031844, g: 0.62289107, b: 0.39899263, a: 1}
+  m_IndirectSpecularColor: {r: 0.34031874, g: 0.62289166, b: 0.3989932, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4046,9 +4046,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2209673655027896610}
     - target: {fileID: 7622559627360117330, guid: 8f34682165b6f46479ae7a743452b784, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622559627360117330, guid: 8f34682165b6f46479ae7a743452b784, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622559627360117330, guid: 8f34682165b6f46479ae7a743452b784, type: 3}
       propertyPath: events.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2209673655027896610}
+    - target: {fileID: 7622559627360117330, guid: 8f34682165b6f46479ae7a743452b784, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622559627360117330, guid: 8f34682165b6f46479ae7a743452b784, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622559627360117330, guid: 8f34682165b6f46479ae7a743452b784, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622559627360117330, guid: 8f34682165b6f46479ae7a743452b784, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: devlog98.Backdoor.PlayerLock, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622559627360117330, guid: 8f34682165b6f46479ae7a743452b784, type: 3}
+      propertyPath: events.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7622559627702277211, guid: 8f34682165b6f46479ae7a743452b784, type: 3}
       propertyPath: m_RootOrder
       value: 5

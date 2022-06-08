@@ -29,6 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 91451020001009965}
+  - {fileID: 5065003945553028396}
   - {fileID: 1798593625023284905}
   m_Father: {fileID: 1274352662866517927}
   m_RootOrder: 1
@@ -136,51 +137,78 @@ MonoBehaviour:
   waitToFinish: 1
   dialogue:
     sentences:
-    - sentencePortrait: {fileID: 0}
-      sentenceKey: School_Student_1
+    - sentenceKey: School_Student_1
       dialogueBoxType: 0
-      dialogueTextSide: 0
+      dialogueTextType: 0
       charWriteTime: 0.03
-    - sentencePortrait: {fileID: 0}
-      sentenceKey: School_Student_2
+      talkFeed: {fileID: 6393387382061766186}
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - sentenceKey: School_Student_2
       dialogueBoxType: 0
-      dialogueTextSide: 0
+      dialogueTextType: 0
       charWriteTime: 0.03
-    - sentencePortrait: {fileID: 0}
-      sentenceKey: School_Student_3
+      talkFeed: {fileID: 6393387382061766186}
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - sentenceKey: School_Student_3
       dialogueBoxType: 0
-      dialogueTextSide: 0
+      dialogueTextType: 0
       charWriteTime: 0.03
-    - sentencePortrait: {fileID: 0}
-      sentenceKey: School_Student_4
+      talkFeed: {fileID: 6393387382061766186}
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - sentenceKey: School_Student_4
       dialogueBoxType: 0
-      dialogueTextSide: 0
+      dialogueTextType: 0
       charWriteTime: 0.03
-    - sentencePortrait: {fileID: 0}
-      sentenceKey: School_Student_5
+      talkFeed: {fileID: 6393387382061766186}
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - sentenceKey: School_Student_5
       dialogueBoxType: 0
-      dialogueTextSide: 0
+      dialogueTextType: 0
       charWriteTime: 0.03
-    - sentencePortrait: {fileID: 0}
-      sentenceKey: School_Student_6
+      talkFeed: {fileID: 6393387382061766186}
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - sentenceKey: School_Student_6
       dialogueBoxType: 0
-      dialogueTextSide: 0
+      dialogueTextType: 0
       charWriteTime: 0.03
-    - sentencePortrait: {fileID: 0}
-      sentenceKey: School_Student_7
+      talkFeed: {fileID: 6393387382061766186}
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - sentenceKey: School_Student_7
       dialogueBoxType: 0
-      dialogueTextSide: 0
+      dialogueTextType: 0
       charWriteTime: 0.03
-    - sentencePortrait: {fileID: 0}
-      sentenceKey: School_Student_8
+      talkFeed: {fileID: 6393387382061766186}
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - sentenceKey: School_Student_8
       dialogueBoxType: 0
-      dialogueTextSide: 0
+      dialogueTextType: 0
       charWriteTime: 0.03
-    - sentencePortrait: {fileID: 0}
-      sentenceKey: School_Student_9
+      talkFeed: {fileID: 6393387382061766186}
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    - sentenceKey: School_Student_9
       dialogueBoxType: 0
-      dialogueTextSide: 0
+      dialogueTextType: 0
       charWriteTime: 0.03
+      talkFeed: {fileID: 6393387382061766186}
+      onPlayEvent:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!114 &1188481225291526208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,7 +386,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4267791742337922877}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2858558593587854057
 MonoBehaviour:
@@ -445,6 +473,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitToFinish: 1
   lockPlayer: 0
+--- !u!1 &6627549310261541961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5065003945553028396}
+  - component: {fileID: 6163268258529823071}
+  m_Layer: 0
+  m_Name: Return To Idle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5065003945553028396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6627549310261541961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4267791742337922877}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6163268258529823071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6627549310261541961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d3d0de2156b114893d0e0f99c5f584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitToFinish: 0
+  events:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 912562719499229358}
+        m_TargetAssemblyTypeName: MoreMountains.Feedbacks.MMFeedbacks, MoreMountains.Feedbacks
+        m_MethodName: PlayFeedbacks
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7020418077522037075
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,11 +856,6 @@ PrefabInstance:
     - {fileID: 3843132549678162982, guid: 4d75444b350064342bf4c4197766205b, type: 3}
     - {fileID: 3843132550860980795, guid: 4d75444b350064342bf4c4197766205b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4d75444b350064342bf4c4197766205b, type: 3}
---- !u!1 &1735986228364383759 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3843132549678162984, guid: 4d75444b350064342bf4c4197766205b, type: 3}
-  m_PrefabInstance: {fileID: 3261445022640239143}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1735986227248672794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3843132550860980797, guid: 4d75444b350064342bf4c4197766205b, type: 3}
@@ -784,6 +866,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3843132550666235937, guid: 4d75444b350064342bf4c4197766205b, type: 3}
   m_PrefabInstance: {fileID: 3261445022640239143}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1735986228364383759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3843132549678162984, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+  m_PrefabInstance: {fileID: 3261445022640239143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &912562719499229358 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2443457895416457865, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+  m_PrefabInstance: {fileID: 3261445022640239143}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b72de2996c5c40bfb394f3d0e0a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6393387382061766186 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8501429423246828557, guid: 4d75444b350064342bf4c4197766205b, type: 3}
+  m_PrefabInstance: {fileID: 3261445022640239143}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b72de2996c5c40bfb394f3d0e0a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1735986226915542549 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3843132550120371250, guid: 4d75444b350064342bf4c4197766205b, type: 3}
