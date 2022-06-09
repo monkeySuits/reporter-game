@@ -40,6 +40,11 @@ items:
   value: Ah! E entrega pra ela o Passe Estudantil que ela tinha esquecido! Sem ele não tem como devolver o livro!
 - key: School_Principal_8
   value: Ai, acho que minha pressão tá até abaixando...
+
+- key: School_Principal_wPass_1
+  value: Lembre-se de dar o Passe Estudantil pra ela!
+- key: School_Principal_wPass_2
+  value: Senão ela não consegue devolver o livro de Biologia...
 #Student
 - key: School_Student_1
   value: Finalmente você chegou! Já não aguentava mais ficar morgando aqui!
@@ -59,6 +64,14 @@ items:
   value: Inclusive... já que você desperdiçou o meu tempo atrasando, eu quero que você devolva esse livro de "Biometria" na biblioteca!
 - key: School_Student_9
   value: Eu ainda tenho muita coisa para estudar hoje!
+
+- key: School_Student_wBook_1
+  value: Biometria... Sai fora! Até parece que eu vou precisar saber disso na vida real.
+- key: School_Student_wBook_2
+  value: Prefiro continuar estudando a História emocionante do nosso país!
+- key: School_Student_wBook_3
+  value: Devolve logo esse troço na biblioteca!
+
 #Teacher
 - key: School_Teacher_1
   value: Ai, eu estou tão orgulhosa da Sônia!!!
@@ -66,6 +79,7 @@ items:
   value: Ela é meio emburrada, mas... tão inteligente!!! E agora está até famosa sendo entrevistada!!!
 - key: School_Teacher_3
   value: Ela merece... não é fácil tirar nota máxima na PNC!!!
+
 #Librarian
 - key: School_Librarian_1
   value: Olá, tudo bem? Vejo que você é nova por aqui, não?
