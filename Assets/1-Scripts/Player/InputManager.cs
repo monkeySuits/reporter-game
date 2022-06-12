@@ -20,6 +20,7 @@ namespace devlog98.Backdoor {
         private PlayerController.PlayerMovementActions playerMovement; // reference to Input System group of inputs
         private PlayerController.InventoryActions playerInventory; 
         private PlayerController.PauseActions playerPause;
+        private PlayerController.GoalsActions playerGoals;
         private Vector2 horizontalInput; // stores horizontal movement
         private Vector2 mouseInput; // stores mouse movement
         private bool inventory;
@@ -31,6 +32,7 @@ namespace devlog98.Backdoor {
             playerMovement = controller.PlayerMovement;
             playerInventory = controller.Inventory;
             playerPause = controller.Pause;
+            playerGoals = controller.Goals;
 
             // horizontal input
             playerMovement.Walk.performed += ctx => horizontalInput = ctx.ReadValue<Vector2>();
@@ -64,6 +66,8 @@ namespace devlog98.Backdoor {
             playerInventory.OpenDisable.started += _ => Inventory();
 
             playerPause.Execute.started += _ => Pause();
+
+            playerGoals.Execute.started += _ => GoalController();
         }
 
         // send inputs to movement scripts
@@ -97,6 +101,10 @@ namespace devlog98.Backdoor {
             // TODO -> Centralizar essas linhas num script do mouse para evitar repetição
             Cursor.visible = pause;
             Cursor.lockState = pause ? CursorLockMode.None : CursorLockMode.Locked;
+        }
+
+        private void GoalController(){
+            CanvasController.instance.Goals();
         }
 
         private void Movement(){

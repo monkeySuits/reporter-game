@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using GoalSystem;
 
 public class NewsController : MonoBehaviour
 {
@@ -11,8 +12,6 @@ public class NewsController : MonoBehaviour
     [SerializeField] private GameObject DefaultNews;
     [SerializeField] private GameObject textDefault;
     [SerializeField] private GameObject Notepad;
-    [Header("Data")]
-    [SerializeField] private ObjectivesControl objectivesControl;
 
     private bool fixedObjectives;
     private bool optionalObjectives;
@@ -23,20 +22,18 @@ public class NewsController : MonoBehaviour
 
     private void Start() {
         //Enviar Scriptableobjects nas noticias
-        if(objectivesControl){
-            mandatoryNews = objectivesControl.MandatoryNews();
-            optionalNews = objectivesControl.OptionalNews();
-            stateNews.GetComponent<NewsDisplay>().GetNews(mandatoryNews);
-            anonymousNews.GetComponent<NewsDisplay>().GetNews(objectivesControl.OptionalNews());
-        }else{
-            Debug.Log("Adicionar o prefab com o controle dos objetivos");
-        }
+        mandatoryNews = GoalManager.Instance.GetMandatoryNews;
+        optionalNews = GoalManager.Instance.GetOptionalNews;
+        stateNews.GetComponent<NewsDisplay>().GetNews(mandatoryNews);
+        anonymousNews.GetComponent<NewsDisplay>().GetNews(optionalNews);
     }
 
     public void Publish(){
         //Consultar se os objetivos foram cumpridos
-        fixedObjectives = objectivesControl.checkFixedObjectives();
-        optionalObjectives = objectivesControl.checkOptionalObjectives();
+        fixedObjectives = GoalManager.Instance.IsCompletedGoalsRequired;
+        optionalObjectives = GoalManager.Instance.IsCompletedGoalsOpcional;
+        Debug.Log("fixedObjectives: " + fixedObjectives);
+        Debug.Log("optionalObjectives: " + optionalObjectives);
         Closed();
         //Ativar a hud com base nos objetivos
         if(fixedObjectives || optionalObjectives){

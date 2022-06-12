@@ -331,6 +331,33 @@ public class @PlayerController : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Goals"",
+            ""id"": ""382185c3-0dd8-4dce-9261-11d4123f852b"",
+            ""actions"": [
+                {
+                    ""name"": ""Execute"",
+                    ""type"": ""Button"",
+                    ""id"": ""629a64e8-c87c-4a94-bda3-ea4ec69d7f53"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""618e69fc-5f66-4fd9-8ef6-501a5841b402"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Execute"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -353,6 +380,9 @@ public class @PlayerController : IInputActionCollection, IDisposable
         // Pause
         m_Pause = asset.FindActionMap("Pause", throwIfNotFound: true);
         m_Pause_Execute = m_Pause.FindAction("Execute", throwIfNotFound: true);
+        // Goals
+        m_Goals = asset.FindActionMap("Goals", throwIfNotFound: true);
+        m_Goals_Execute = m_Goals.FindAction("Execute", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -569,6 +599,39 @@ public class @PlayerController : IInputActionCollection, IDisposable
         }
     }
     public PauseActions @Pause => new PauseActions(this);
+
+    // Goals
+    private readonly InputActionMap m_Goals;
+    private IGoalsActions m_GoalsActionsCallbackInterface;
+    private readonly InputAction m_Goals_Execute;
+    public struct GoalsActions
+    {
+        private @PlayerController m_Wrapper;
+        public GoalsActions(@PlayerController wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Execute => m_Wrapper.m_Goals_Execute;
+        public InputActionMap Get() { return m_Wrapper.m_Goals; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(GoalsActions set) { return set.Get(); }
+        public void SetCallbacks(IGoalsActions instance)
+        {
+            if (m_Wrapper.m_GoalsActionsCallbackInterface != null)
+            {
+                @Execute.started -= m_Wrapper.m_GoalsActionsCallbackInterface.OnExecute;
+                @Execute.performed -= m_Wrapper.m_GoalsActionsCallbackInterface.OnExecute;
+                @Execute.canceled -= m_Wrapper.m_GoalsActionsCallbackInterface.OnExecute;
+            }
+            m_Wrapper.m_GoalsActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Execute.started += instance.OnExecute;
+                @Execute.performed += instance.OnExecute;
+                @Execute.canceled += instance.OnExecute;
+            }
+        }
+    }
+    public GoalsActions @Goals => new GoalsActions(this);
     public interface IPlayerMovementActions
     {
         void OnWalk(InputAction.CallbackContext context);
@@ -587,6 +650,10 @@ public class @PlayerController : IInputActionCollection, IDisposable
         void OnOpenDisable(InputAction.CallbackContext context);
     }
     public interface IPauseActions
+    {
+        void OnExecute(InputAction.CallbackContext context);
+    }
+    public interface IGoalsActions
     {
         void OnExecute(InputAction.CallbackContext context);
     }

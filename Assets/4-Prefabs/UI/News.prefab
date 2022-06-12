@@ -7648,7 +7648,6 @@ MonoBehaviour:
   DefaultNews: {fileID: 1942425043}
   textDefault: {fileID: 160140487}
   Notepad: {fileID: 350806580}
-  objectivesControl: {fileID: 0}
 --- !u!1 &3448910906960043559
 GameObject:
   m_ObjectHideFlags: 0

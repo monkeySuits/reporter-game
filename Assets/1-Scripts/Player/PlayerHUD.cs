@@ -1,6 +1,7 @@
 ﻿using MoreMountains.Feedbacks;
 using TMPro;
 using UnityEngine;
+using GoalSystem;
 
 /*
  * Controls elements of the Player HUD
@@ -35,7 +36,7 @@ namespace devlog98.Backdoor {
         }
 
         private void Update() {
-            if (objectivesControl.checkFixedObjectives()) {
+            if (GoalManager.Instance.IsCompletedGoalsRequired) {
                 reportText.SetActive(true);
             }
         }

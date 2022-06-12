@@ -318,6 +318,33 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Goals",
+            "id": "382185c3-0dd8-4dce-9261-11d4123f852b",
+            "actions": [
+                {
+                    "name": "Execute",
+                    "type": "Button",
+                    "id": "629a64e8-c87c-4a94-bda3-ea4ec69d7f53",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "618e69fc-5f66-4fd9-8ef6-501a5841b402",
+                    "path": "<Keyboard>/o",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Execute",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
