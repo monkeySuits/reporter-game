@@ -53,6 +53,7 @@ namespace devlog98.Backdoor
                 if (saveManager.SaveObject.levels[saveManager.SaveObject.curLevel].itemsInLevel[i].name == item.displayName)
                 {
                     saveManager.SaveObject.levels[saveManager.SaveObject.curLevel].itemsInLevel[i].acquired = true;
+
                     saveManager.Save();
                     break;
                 }

@@ -951,7 +951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2495079758423199737}
   loadInFeed: {fileID: 6456065656313061832}
-  isDebug: 1
+  isDebug: 0
 --- !u!1 &2495079759763268355
 GameObject:
   m_ObjectHideFlags: 0

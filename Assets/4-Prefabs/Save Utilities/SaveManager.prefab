@@ -69,10 +69,11 @@ MonoBehaviour:
       - name: Password
         acquired: 0
     curLevel: 0
+    curLevelIndex: 0
     posX: 0
     posY: 0
     posZ: 0
-  SaveLoadMethod: 2
+  SaveLoadMethod: 0
   FileName: TestObject
   FolderName: MMTest/
   SaveFileExtension: .testObject
@@ -80,3 +81,4 @@ MonoBehaviour:
   TestSaveButton: 0
   TestLoadButton: 0
   TestResetButton: 0
+  saveIndex: 0

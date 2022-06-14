@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.Tools;
+using UnityEngine.SceneManagement;
 
 public class SaveCurrentLevel : MonoBehaviour
 {
@@ -15,5 +16,7 @@ public class SaveCurrentLevel : MonoBehaviour
     }
     public void SaveLevel(){
         saveManager.SaveObject.curLevel = level;
+        saveManager.SaveObject.curLevelIndex = SceneManager.GetActiveScene().buildIndex;
+
     }
 }

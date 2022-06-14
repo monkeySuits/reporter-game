@@ -27,6 +27,7 @@ public class GoalsDisplay : MonoBehaviour
     //Função responsavel for assinalar o checkbox ao completar o objetivo
     public void Checked(){
         saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].done = true;
+
         saveLoadScript.Save();
 
         check = true;

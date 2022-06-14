@@ -30,8 +30,9 @@ namespace MoreMountains.Tools
     [System.Serializable]
     public class MMSaveLoadSaveObject
     {
-        public List<LevelProgressObject> levels;
-        public int curLevel;
+        public List<LevelProgressObject> levels; // List of Chapters
+        public int curLevel; // The chapter in the story
+        public int curLevelIndex; // The index of the last scene you were on
 
         // Player position (vectors are not serializable)
         public float posX;
@@ -70,11 +71,13 @@ namespace MoreMountains.Tools
         [MMInspectorButton("Reset")]
         public bool TestResetButton;
 
+        public int saveIndex;
+
         protected IMMSaveLoadManagerMethod _saveLoadManagerMethod;
 
         protected override void Awake () {
             base.Awake();
-            Load();
+            // Load();
         }
 
         /// <summary>
@@ -83,16 +86,16 @@ namespace MoreMountains.Tools
         public virtual void Save()
         {
             InitializeSaveLoadMethod();
-            MMSaveLoadManager.Save(SaveObject, FileName+SaveFileExtension, FolderName);
+            MMSaveLoadManager.Save(SaveObject, FileName+saveIndex+SaveFileExtension, FolderName);
         }
 
         /// <summary>
         /// Loads the saved data
         /// </summary>
-        protected virtual void Load()
+        public virtual void Load()
         {
             InitializeSaveLoadMethod();
-            SaveObject = (MMSaveLoadSaveObject)MMSaveLoadManager.Load(typeof(MMSaveLoadSaveObject), FileName + SaveFileExtension, FolderName);
+            SaveObject = (MMSaveLoadSaveObject)MMSaveLoadManager.Load(typeof(MMSaveLoadSaveObject), FileName+saveIndex+SaveFileExtension, FolderName);
         }
 
         /// <summary>

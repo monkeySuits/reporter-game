@@ -19,7 +19,7 @@ public class MarkCheckpoint : MonoBehaviour
        saveScript.SaveObject.posY =  checkpointPos.y;
        saveScript.SaveObject.posZ =  checkpointPos.z;
 
-       saveScript.Save();
+        saveScript.Save();
     }
 
 

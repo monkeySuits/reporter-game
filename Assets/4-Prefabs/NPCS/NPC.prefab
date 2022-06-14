@@ -1431,7 +1431,6 @@ GameObject:
   - component: {fileID: 7042254403658586873}
   - component: {fileID: 3754043858267238653}
   - component: {fileID: 1565392114948461101}
-  - component: {fileID: 4898458100478018449}
   - component: {fileID: 8399817559924219960}
   m_Layer: 0
   m_Name: Disappear Feedback
@@ -1467,10 +1466,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Feedbacks:
+  - {fileID: 8399817559924219960}
   - {fileID: 1565392114948461101}
   - {fileID: 3754043858267238653}
-  - {fileID: 4898458100478018449}
-  - {fileID: 8399817559924219960}
   InitializationMode: 2
   SafeMode: 3
   Direction: 0
@@ -1690,45 +1688,6 @@ MonoBehaviour:
   ResetEvents:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4898458100478018449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8843470526772057498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66650ffe68eb1f548acc774ac2db1b80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Active: 1
-  Label: Pause
-  Chance: 100
-  Timing:
-    TimescaleMode: 0
-    InitialDelay: 0
-    CooldownDuration: 0
-    ExcludeFromHoldingPauses: 0
-    InterruptsOnStop: 1
-    NumberOfRepeats: 0
-    RepeatForever: 0
-    DelayBetweenRepeats: 1
-    MMFeedbacksDirectionCondition: 0
-    PlayDirection: 0
-    ConstantIntensity: 0
-    UseIntensityInterval: 0
-    IntensityIntervalMin: 0
-    IntensityIntervalMax: 0
-    Sequence: {fileID: 0}
-    TrackID: 0
-    Quantized: 0
-    TargetBPM: 120
-  DebugActive: 0
-  PauseDuration: 0.3
-  ScriptDriven: 0
-  AutoResume: 0
-  AutoResumeAfter: 0.25
 --- !u!114 &8399817559924219960
 MonoBehaviour:
   m_ObjectHideFlags: 0
