@@ -45,6 +45,7 @@ items:
   value: Lembre-se de dar o Passe Estudantil pra ela!
 - key: School_Principal_wPass_2
   value: Senão ela não consegue devolver o livro de Biologia...
+
 #Student
 - key: School_Student_1
   value: Finalmente você chegou! Já não aguentava mais ficar morgando aqui!
@@ -142,3 +143,131 @@ items:
   value: Sim, eu sei que tá calor hoje... mas tão ateando fogo no terreno ao lado, e a fumaça tá vindo toda pra cá!
 - key: School_LibraryGuard3_3
   value: Então, zarpando!
+
+#EPISODE 03 - HELLMET INC. (Factory)
+#Tired Worker
+- key: Factory_TiredWorker_1
+  value: Ei você... não se aproxime... desse maquinário... moça...
+- key: Factory_TiredWorker_2
+  value: ...zzzzzzz...
+- key: Factory_TiredWorker_3
+  value: Ahn?! O quê?!!
+- key: Factory_TiredWorker_4
+  value: Ah... eu cochilei de novo...
+- key: Factory_TiredWorker_5
+  value: Eu tô precisando muito de um golinho de café... já não aguento mais ficar aqui parado!
+- key: Factory_TiredWorker_6
+  value: É que eu esqueci minha xícara... e a empresa não dá nenhum copinho pra gente...
+- key: Factory_TiredWorker_7
+  value: Então não tenho outra escolha... a não ser continuar... aqui... trabalhando...
+- key: Factory_TiredWorker_8
+  value: ...zzzzzzz...
+
+- key: Factory_TiredWorker_Loop_1
+  value: Ahn?! Xícara de café?!!
+- key: Factory_TiredWorker_Loop_2
+  value: Ah não... é só você de novo, moça...
+- key: Factory_TiredWorker_Loop_3
+  value: Com licença... deixa eu... trabalhar...
+- key: Factory_TiredWorker_Loop_4
+  value: ...zzzzzzz...
+
+- key: Factory_TiredWorker_wCup_1
+  value: Ahn?! Moça gatinha?!!
+- key: Factory_TiredWorker_wCup_2
+  value: Ah não... é só uma xícara de café...
+- key: Factory_TiredWorker_wCup_3
+  value: Peraí... xícara de café?! Você conseguiu achar uma pra mim?!
+- key: Factory_TiredWorker_wCup_4
+  value: Valeu, moça! Vou dar um pulinho na cozinha rapidinho pro chefe não dar falta de mim!
+- key: Factory_TiredWorker_wCup_5
+  value: Mas fica longe desse maquinário, tá... É muito perigoso!
+
+#Helmet Worker
+- key: Factory_HelmetWorker_In_1
+  value: Opa, opa, opa!!! Não pense que eu não estou te vendo!
+- key: Factory_HelmetWorker_In_2
+  value: Toma! Bota esse capacete aqui na sua cabeça antes de continuar!
+
+- key: Factory_HelmetWorker_InLoop_1
+  value: Ahem! Estou vendo você entrando sem capacete!
+
+- key: Factory_HelmetWorker_Out_1
+  value: Opa, opa, opa!!! Esse capacete aí não é brinde!
+- key: Factory_HelmetWorker_Out_2
+  value: Dá aqui ele! Só porque tem um furo não quer dizer que não dá pra usar!
+
+- key: Factory_HelmetWorker_OutLoop_1
+  value: Nem pense em sair com esse capacete! Estou de olho em você!
+
+#Guard
+- key: Factory_Guard_1
+  value: Alice Veríssima... Vinte e sete anos. Solteira. Berlandesa. Um metro e sessenta e oito de altura. Cinquenta e três quilos. Olhos e cabelos castanhos.
+- key: Factory_Guard_2
+  value: Eu fui informado de sua chegada... Seja breve em sua entrevista...
+- key: Factory_Guard_3
+  value: E não faça nada suspeito...
+
+- key: Factory_Guard_Loop_1
+  value: Vá fazer o seu trabalho enquanto eu faço o meu...
+
+#Tester
+- key: Factory_Tester_1
+  value: Cacilda! Você é a repórter que veio me entrevistar, não é?
+- key: Factory_Tester_2
+  value: Quer dizer que já é de tarde... nem vi minha hora do almoço passar...
+- key: Factory_Tester_3
+  value: Mas fique tranquila! Não é a primeira vez que deixo de fazer a pausa do almoço!
+- key: Factory_Tester_4
+  value: A vida de testador de capacetes é bem corrida! Pode parecer que eu só fico parado aqui sem fazer nada... mas é muito mais do que isso!
+- key: Factory_Tester_5
+  value: Eu não fico só parado... Eu fico COMPLETAMENTE ESTÁTICO!!! Qualquer movimento minúsculo pode fazer o guarda errar o tiro!
+- key: Factory_Tester_6
+  value: E queremos testar o capacete, não é? Não minha testa hahahaha!!!! Testar a testa, essa é boa haha...
+- key: Factory_Tester_7
+  value: O segredo desse trabalho está na postura! Eu gosto de manter a coluna reta, mas ao mesmo tempo bem relaxada...
+- key: Factory_Tester_8
+  value: ... daí o tiro empurra minha cabeça pra trás e não força tanto meu pescoço!
+- key: Factory_Tester_9
+  value: O próprio testador que tinha antes de mim teve um acidente com isso! Ele foi demitido da fábrica justamente quando...
+#Guard dá vários tiros consecutivos no Tester para ele parar de falar
+- key: Factory_Tester_10
+  value: ... É... eu acho melhor não falar do ex-testador pra você, dona...
+- key: Factory_Tester_11
+  value: Pelo menos, não enquanto ele estiver olhando...
+
+- key: Factory_Tester_Loop_1
+  value: Eu não ligo de te contar o caso do ex-testador...
+- key: Factory_Tester_Loop_2
+  value: ... Mas não vou fazer isso com o guarda me olhando! Eu vou acabar tendo o mesmo fim do tal testador!
+- key: Factory_Tester_Loop_3
+  value: E se a gente tiver a chance de falar dele, você vai entender que isso é RUIM!!!
+
+- key: Factory_Tester_wGuardOut_1
+  value: Cacilda! Hoje deve ser meu dia de sorte!
+- key: Factory_Tester_wGuardOut_2
+  value: Agora que a esteira parou, eu vou poder tirar minha pausinha de almoço!
+- key: Factory_Tester_wGuardOut_3
+  value: Ah é! Você queria saber daquele... daquele caso, não é...?
+- key: Factory_Tester_wGuardOut_4
+  value: Olha, pelo que me contaram... a fábrica recebeu uma demanda enorme lá da capital, direto do Grande Líder...
+- key: Factory_Tester_wGuardOut_5
+  value: Daí o antigo testador acabou fazendo horas extras demais... turnos e mais turnos sem parada... até que, é claro, o pescoço dele não aguentou...
+- key: Factory_Tester_wGuardOut_6
+  value: A fábrica demitiu ele na hora... e depois tentou esconder todas as evidências do acidente pra não ficar feio...
+- key: Factory_Tester_wGuardOut_7
+  value: Hoje em dia esse caso é quase que uma lenda aqui... se existe alguma prova concreta, só se for na sala do Sr. Manzoppini...
+- key: Factory_Tester_wGuardOut_8
+  value: Mas agora você sabe como faço meu trabalho direitinho! Se quiser botar isso na reportagem, quem sabe não ganho um reconhecimento aqui!
+
+- key: Factory_Tester_wGuardOut_Loop_1
+  value: Infelizmente eu não sei mais nada daquele caso... eu acho que o Sr. Manzoppini esconde as provas na sala dele...
+- key: Factory_Tester_wGuardOut_Loop_2
+  value: Mas pelo menos a entrevista vai sair legal, não é?
+
+#TODO
+#Fixer Worker
+#- key: Factory_FixerWorker_1
+#  value: 
+
+#Boss
