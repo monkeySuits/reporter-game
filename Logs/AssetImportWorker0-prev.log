@@ -1,0 +1,671 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.14f1 (d0d1bb862f9d) revision 13685179'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19044.1706; Version 2009; 64bit' Language: 'pt' Physical Memory: 16309 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\Drive Gamedev\Unity Versions\2020.3.14f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Drive Gamedev/reporter-game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60559
+Successfully changed project path to: E:/Drive Gamedev/reporter-game
+E:/Drive Gamedev/reporter-game
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 176.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.14f1 (d0d1bb862f9d)
+[Subsystems] Discovering subsystems at path E:/Drive Gamedev/Unity Versions/2020.3.14f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Drive Gamedev/reporter-game/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   30.0.15.1179
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'E:/Drive Gamedev/Unity Versions/2020.3.14f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Drive Gamedev/Unity Versions/2020.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Drive Gamedev/Unity Versions/2020.3.14f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Drive Gamedev/Unity Versions/2020.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: E:/Drive Gamedev/Unity Versions/2020.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001596 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 203.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.452 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1452ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (707ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (206ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (377ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (203ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008957 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 197.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Loading style catalogs (6)
+	StyleSheets/Extensions/base/common.uss
+	UIPackageResources/StyleSheets/Default/Variables/Public/common.uss
+	StyleSheets/Northstar/common.uss
+	StyleSheets/Extensions/fonts/inter.uss
+	StyleSheets/Extensions/base/dark.uss
+	UIPackageResources/StyleSheets/Default/Northstar/Palette/dark.uss
+Mono: successfully reloaded assembly
+- Completed reload, in  2.364 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2365ms)
+		BeginReloadAssembly (170ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (2121ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (466ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (125ms)
+			SetupLoadedEditorAssemblies (1152ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (198ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (795ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
+Refreshing native plugins compatible for Editor in 2.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4547 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 287.0 MB.
+System memory in use after: 286.8 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 4989.
+Total: 8.398100 ms (FindLiveObjects: 0.501400 ms CreateObjectMapping: 0.338500 ms MarkObjects: 3.924100 ms  DeleteObjects: 3.631900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/6-Models/Level 2 - School/Principal Office/CadeiraDiretora.fbx
+  artifactKey: Guid(e8abf4771a1185249baa9a33bf9d956a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/CadeiraDiretora.fbx using Guid(e8abf4771a1185249baa9a33bf9d956a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f83e01844c75a0da528e7a04e1c2d03') in 1.507260 seconds 
+  Import took 1.536574 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008597 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Loading style catalogs (6)
+	StyleSheets/Extensions/base/common.uss
+	UIPackageResources/StyleSheets/Default/Variables/Public/common.uss
+	StyleSheets/Northstar/common.uss
+	StyleSheets/Extensions/fonts/inter.uss
+	StyleSheets/Extensions/base/dark.uss
+	UIPackageResources/StyleSheets/Default/Northstar/Palette/dark.uss
+Mono: successfully reloaded assembly
+- Completed reload, in  1.821 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1821ms)
+		BeginReloadAssembly (183ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1570ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (453ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (658ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (511ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4338 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 278.4 MB.
+System memory in use after: 278.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 5072.
+Total: 4.268300 ms (FindLiveObjects: 0.397800 ms CreateObjectMapping: 0.195900 ms MarkObjects: 3.324400 ms  DeleteObjects: 0.349300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1541.336929 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Grampeador.fbx
+  artifactKey: Guid(2fe7a5ac564c6fc47af05666af31141f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Grampeador.fbx using Guid(2fe7a5ac564c6fc47af05666af31141f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f9444446b1ba947f52cf016abc5d39') in 0.414504 seconds 
+  Import took 0.475327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.883132 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Lapises.fbx
+  artifactKey: Guid(46fe2bb84ad242346acabe68e4103b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Lapises.fbx using Guid(46fe2bb84ad242346acabe68e4103b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db6cb31dfa38421219de31f3827b9ad') in 0.206311 seconds 
+  Import took 0.359920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.850399 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Grampeador.fbx
+  artifactKey: Guid(2fe7a5ac564c6fc47af05666af31141f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Grampeador.fbx using Guid(2fe7a5ac564c6fc47af05666af31141f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8f9ef9c95d329ce2d243e238c782d8') in 0.038169 seconds 
+  Import took 0.059243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 136.425588 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Armario_2.fbx
+  artifactKey: Guid(ade77b3a43c948641afa67009d3c3a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Armario_2.fbx using Guid(ade77b3a43c948641afa67009d3c3a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395d52e24df7d725d051a6f2ca0c477e') in 0.103075 seconds 
+  Import took 0.133222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.885283 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Armario_2.fbx
+  artifactKey: Guid(ade77b3a43c948641afa67009d3c3a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Armario_2.fbx using Guid(ade77b3a43c948641afa67009d3c3a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a5a4c5ee1e071af92f9a4f61f47b54c') in 0.093444 seconds 
+  Import took 0.124698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.022264 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Cadeira basica.fbx
+  artifactKey: Guid(b9e6216127e39e54eb624da9e6d7c6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Cadeira basica.fbx using Guid(b9e6216127e39e54eb624da9e6d7c6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad665a1cc85900658f72aa65719ac98') in 0.468191 seconds 
+  Import took 0.482867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.594058 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Cadeira basica.fbx
+  artifactKey: Guid(b9e6216127e39e54eb624da9e6d7c6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Cadeira basica.fbx using Guid(b9e6216127e39e54eb624da9e6d7c6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c90aad87692e238d2768671fefa53440') in 0.108759 seconds 
+  Import took 0.157659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.801414 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/CadeiraDiretora.fbx
+  artifactKey: Guid(e8abf4771a1185249baa9a33bf9d956a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/CadeiraDiretora.fbx using Guid(e8abf4771a1185249baa9a33bf9d956a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0cba34abc6d2b3ba3b72ec2f2d750f4') in 0.102910 seconds 
+  Import took 0.130583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.492382 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Armario.fbx
+  artifactKey: Guid(e73bdfdd5068da4468548deb7c196d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Armario.fbx using Guid(e73bdfdd5068da4468548deb7c196d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fad1e12b6352119e96cbe5299d344f4e') in 0.178939 seconds 
+  Import took 0.557308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.353445 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Armario.fbx
+  artifactKey: Guid(e73bdfdd5068da4468548deb7c196d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Armario.fbx using Guid(e73bdfdd5068da4468548deb7c196d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e77119c932bf0354e2feb706fb7b74a') in 0.074019 seconds 
+  Import took 0.104020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 831.040521 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Retrato.png
+  artifactKey: Guid(0d476dfd7bf6edf4fb58de0297c1f0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Retrato.png using Guid(0d476dfd7bf6edf4fb58de0297c1f0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c606bfcbadc62fea1e59ddc6e389a818') in 0.065376 seconds 
+  Import took 0.102141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.536260 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Retrato.png
+  artifactKey: Guid(0d476dfd7bf6edf4fb58de0297c1f0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Retrato.png using Guid(0d476dfd7bf6edf4fb58de0297c1f0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5244ad6ba09b1930273e92438af072be') in 0.062044 seconds 
+  Import took 0.087045 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006854 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Loading style catalogs (6)
+	StyleSheets/Extensions/base/common.uss
+	UIPackageResources/StyleSheets/Default/Variables/Public/common.uss
+	StyleSheets/Northstar/common.uss
+	StyleSheets/Extensions/fonts/inter.uss
+	StyleSheets/Extensions/base/dark.uss
+	UIPackageResources/StyleSheets/Default/Northstar/Palette/dark.uss
+Mono: successfully reloaded assembly
+- Completed reload, in  2.526 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2532ms)
+		BeginReloadAssembly (242ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (107ms)
+		EndReloadAssembly (2176ms)
+			LoadAssemblies (160ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (816ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (824ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (678ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4338 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 279.2 MB.
+System memory in use after: 279.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 5115.
+Total: 8.447900 ms (FindLiveObjects: 0.362900 ms CreateObjectMapping: 0.211100 ms MarkObjects: 7.499800 ms  DeleteObjects: 0.372700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 380.738078 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Calendar.fbx
+  artifactKey: Guid(69aca14f5e7eb1c4cb6b00fea96df6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Calendar.fbx using Guid(69aca14f5e7eb1c4cb6b00fea96df6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ba510462bec0a2d07cc1ba470a9b04') in 0.610052 seconds 
+  Import took 0.805556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.784942 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Calendar.fbx
+  artifactKey: Guid(69aca14f5e7eb1c4cb6b00fea96df6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Calendar.fbx using Guid(69aca14f5e7eb1c4cb6b00fea96df6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f1c7797e828d647a9a819b9eabf60e1') in 0.075323 seconds 
+  Import took 0.156300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.879232 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Calendar.png
+  artifactKey: Guid(31698960f28f27e4583adddb2fb199a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Calendar.png using Guid(31698960f28f27e4583adddb2fb199a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7d51a6a41a786be37f568ea1c2297b') in 0.025721 seconds 
+  Import took 0.185052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.789648 seconds.
+  path: Assets/6-Models/Level 2 - School/Principal Office/Calendar.png
+  artifactKey: Guid(31698960f28f27e4583adddb2fb199a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Principal Office/Calendar.png using Guid(31698960f28f27e4583adddb2fb199a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3f7b866d581c8288feb1afdbe253b0') in 0.049767 seconds 
+  Import took 0.138298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 152.050254 seconds.
+  path: Assets/2-Scenes/Levels/EP 2 - School/EP2.3_School_Classroom.unity
+  artifactKey: Guid(67bafa9d3c7448943a21b67994d63aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2-Scenes/Levels/EP 2 - School/EP2.3_School_Classroom.unity using Guid(67bafa9d3c7448943a21b67994d63aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2584a7453e05173a00e156311e42deb') in 0.109007 seconds 
+  Import took 0.149863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 439.898637 seconds.
+  path: Assets/6-Models/Level 2 - School/Classroom/MensagemLousa.png
+  artifactKey: Guid(e1b39b3ebb013c644aa2f84a045f6140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Classroom/MensagemLousa.png using Guid(e1b39b3ebb013c644aa2f84a045f6140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303d5eff731a009234c4bc67229b8a2c') in 0.894770 seconds 
+  Import took 0.939985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.463442 seconds.
+  path: Assets/6-Models/Level 2 - School/Classroom/MensagemLousa.png
+  artifactKey: Guid(e1b39b3ebb013c644aa2f84a045f6140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Classroom/MensagemLousa.png using Guid(e1b39b3ebb013c644aa2f84a045f6140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303d5eff731a009234c4bc67229b8a2c') in 0.506839 seconds 
+  Import took 0.518117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.913787 seconds.
+  path: Assets/6-Models/Level 2 - School/Classroom/MensagemLousa.png
+  artifactKey: Guid(e1b39b3ebb013c644aa2f84a045f6140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Classroom/MensagemLousa.png using Guid(e1b39b3ebb013c644aa2f84a045f6140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '512d95e01a02ee7277329c7847465d96') in 0.037249 seconds 
+  Import took 0.056878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 519.499370 seconds.
+  path: Assets/6-Models/Level 2 - School/Classroom/Mesa Professora.fbx
+  artifactKey: Guid(52fa54ccf89c4494fad9b6259072d31b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Classroom/Mesa Professora.fbx using Guid(52fa54ccf89c4494fad9b6259072d31b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e4bbfb1a4a53809b65c598781b7a54') in 0.122999 seconds 
+  Import took 0.237890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.733064 seconds.
+  path: Assets/6-Models/Level 2 - School/Classroom/Mesa Professora.fbx
+  artifactKey: Guid(52fa54ccf89c4494fad9b6259072d31b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Classroom/Mesa Professora.fbx using Guid(52fa54ccf89c4494fad9b6259072d31b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '192fbc1fea7c8fb9727bd802f7c123ee') in 0.106025 seconds 
+  Import took 0.134339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1080.627803 seconds.
+  path: Assets/6-Models/Level 2 - School/Classroom/Ventilador.fbx
+  artifactKey: Guid(872ecef4a631b5546b023ae360ba3507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Classroom/Ventilador.fbx using Guid(872ecef4a631b5546b023ae360ba3507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9acbdcdd635aacc48d4940f9bba70f') in 0.098127 seconds 
+  Import took 0.152455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.197449 seconds.
+  path: Assets/6-Models/Level 2 - School/Classroom/Ventilador.fbx
+  artifactKey: Guid(872ecef4a631b5546b023ae360ba3507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Classroom/Ventilador.fbx using Guid(872ecef4a631b5546b023ae360ba3507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff50336cacf90e56c8b87cebc58c632') in 0.091470 seconds 
+  Import took 0.121176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2723.466587 seconds.
+  path: Assets/2-Scenes/Levels/EP 2 - School/EP2.4_School_Library.unity
+  artifactKey: Guid(29029dcd4630f3545ad3c34983b3cdeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2-Scenes/Levels/EP 2 - School/EP2.4_School_Library.unity using Guid(29029dcd4630f3545ad3c34983b3cdeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9448b7a9f9f57159c970bef72ecce24a') in 0.061357 seconds 
+  Import took 0.188001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2136.155732 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Globe.fbx
+  artifactKey: Guid(758c66c36dae8dd4ea88014c852b7486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Globe.fbx using Guid(758c66c36dae8dd4ea88014c852b7486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32643ee06695ea7f46a365368db5401e') in 0.130178 seconds 
+  Import took 0.150343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.735391 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Globe.fbx
+  artifactKey: Guid(758c66c36dae8dd4ea88014c852b7486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Globe.fbx using Guid(758c66c36dae8dd4ea88014c852b7486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e2893f805e13a65652eed4af0d6da8') in 0.082790 seconds 
+  Import took 0.121758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 153.415917 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Book_Orange.fbx
+  artifactKey: Guid(48128216133534c4d9eef3c6c1669d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Book_Orange.fbx using Guid(48128216133534c4d9eef3c6c1669d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196169d92a8919a7c744dd58f50db4d1') in 0.047923 seconds 
+  Import took 0.071820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.405035 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Book_Pink.fbx
+  artifactKey: Guid(c41ca675f9e2dfa4aa8050c42e92c5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Book_Pink.fbx using Guid(c41ca675f9e2dfa4aa8050c42e92c5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199eb50f0b40f47e792d8877c9bd57ed') in 0.138940 seconds 
+  Import took 0.177715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.212530 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Book_Blue.fbx
+  artifactKey: Guid(98637725ef37bf54aaa1ddb8b3bc427f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Book_Blue.fbx using Guid(98637725ef37bf54aaa1ddb8b3bc427f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2671d5e2e6f65dde0cb488a848ad9193') in 0.067185 seconds 
+  Import took 0.302133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.672425 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Book_Orange.fbx
+  artifactKey: Guid(48128216133534c4d9eef3c6c1669d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Book_Orange.fbx using Guid(48128216133534c4d9eef3c6c1669d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0e850a8136a600a7237299dc76ad6a') in 0.045841 seconds 
+  Import took 0.077053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1357.102068 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Bookrow_1.fbx
+  artifactKey: Guid(db38f3ddcc5ee824a89593a48467a78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Bookrow_1.fbx using Guid(db38f3ddcc5ee824a89593a48467a78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e893eb5b7580a951cf631b10992133') in 0.256654 seconds 
+  Import took 0.293298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.070512 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Bookrow_1.fbx
+  artifactKey: Guid(db38f3ddcc5ee824a89593a48467a78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Bookrow_1.fbx using Guid(db38f3ddcc5ee824a89593a48467a78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf7854123b3dc4371bb73941ee16d31f') in 0.055490 seconds 
+  Import took 0.069667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 427.039567 seconds.
+  path: Assets/6-Models/Level 2 - School
+  artifactKey: Guid(cd09b4674d878454abbab01ab0ba59f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School using Guid(cd09b4674d878454abbab01ab0ba59f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93481208a1f76621dc59662894bd3f1f') in 0.182205 seconds 
+  Import took 0.412381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.190931 seconds.
+  path: Assets/6-Models/Level 2 - School/Library
+  artifactKey: Guid(d1079f1aab3010e45b9da72c7816798f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library using Guid(d1079f1aab3010e45b9da72c7816798f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c2e3c3e5913832f731eebb679563c4') in 0.010210 seconds 
+  Import took 0.050766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.611820 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Book_Blue.fbx
+  artifactKey: Guid(98637725ef37bf54aaa1ddb8b3bc427f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Book_Blue.fbx using Guid(98637725ef37bf54aaa1ddb8b3bc427f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd74f12cfd18e724809eea4c82aad1a') in 0.048418 seconds 
+  Import took 0.068727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.654802 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Bookrow_3.fbx
+  artifactKey: Guid(b3b8c1153145b784cabbda5ce5a918c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Bookrow_3.fbx using Guid(b3b8c1153145b784cabbda5ce5a918c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c766aada4aee21913f474beafce003') in 0.095433 seconds 
+  Import took 0.133179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.599470 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Bookrow_2.fbx
+  artifactKey: Guid(6d39a1ff8a264d640a63cdf9bfec480c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Bookrow_2.fbx using Guid(6d39a1ff8a264d640a63cdf9bfec480c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d097b131731d69145e5c89bd99af47') in 0.039505 seconds 
+  Import took 0.064212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.813511 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Bookrow_2.fbx
+  artifactKey: Guid(6d39a1ff8a264d640a63cdf9bfec480c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Bookrow_2.fbx using Guid(6d39a1ff8a264d640a63cdf9bfec480c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4263d8d768cfd236b86c04f41c3292a') in 0.047779 seconds 
+  Import took 0.081363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.179144 seconds.
+  path: Assets/6-Models/Level 2 - School/Library/Bookrow_3.fbx
+  artifactKey: Guid(b3b8c1153145b784cabbda5ce5a918c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/6-Models/Level 2 - School/Library/Bookrow_3.fbx using Guid(b3b8c1153145b784cabbda5ce5a918c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eecc50416fdd221aeaf50b02c8e51e8') in 0.043293 seconds 
+  Import took 0.067011 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005343 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Loading style catalogs (6)
+	StyleSheets/Extensions/base/common.uss
+	UIPackageResources/StyleSheets/Default/Variables/Public/common.uss
+	StyleSheets/Northstar/common.uss
+	StyleSheets/Extensions/fonts/inter.uss
+	StyleSheets/Extensions/base/dark.uss
+	UIPackageResources/StyleSheets/Default/Northstar/Palette/dark.uss
+Mono: successfully reloaded assembly
+- Completed reload, in  2.996 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3002ms)
+		BeginReloadAssembly (349ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (26ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (156ms)
+		EndReloadAssembly (2574ms)
+			LoadAssemblies (145ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (541ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (1490ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (1324ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (39ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 3.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4338 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 279.5 MB.
+System memory in use after: 279.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 5156.
+Total: 8.659200 ms (FindLiveObjects: 0.545900 ms CreateObjectMapping: 0.315400 ms MarkObjects: 4.362100 ms  DeleteObjects: 3.434500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
