@@ -10,11 +10,16 @@ namespace GoalSystem{
         public TextMeshProUGUI title;
         public GameObject imgCompleted;
         public GameObject imgDefault;
+        public GoalType type;
         //Ao se criado preenche as informações e fica ouvindo o evento Achieved
         public void Inite(Goal goal){
             title.text = goal.title;
             sequence = goal.sequenceID;
             Goal.Achieved += OnCompleted;
+            type = goal.type;
+            if(type == GoalType.OPCIONAL){
+                title.color = Color.red;
+            }
         }
         //Quando acionado ele altera a imagem e fonte na HUD para informar que foi completo
         private void OnCompleted(Goal goal){
