@@ -5,15 +5,21 @@ using GoalSystem;
 
 public class TriggerGoal : Goal
 {
+    bool active;
     protected override GoalStatus IsRunning()
     {
         return GoalStatus.COMPLETD;
     }
     //Função para informar que o objetivo foi completo
     public void Completed(){
+        if(!active){
+            ActivateObject();
+        }
         if(!ActivedGoal){
             Activate();
         }
+
+        saveObjective();
         Invoke("Finish", 1);
     }
 
@@ -23,5 +29,6 @@ public class TriggerGoal : Goal
     //Função para ativar a HUD do objetivo quando startado como WAIT
     public void ActivateObject(){
         Trigger();
+        active = true;
     }
 }

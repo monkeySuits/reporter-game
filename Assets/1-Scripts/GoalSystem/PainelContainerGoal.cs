@@ -49,6 +49,7 @@ namespace GoalSystem{
                 ReorderList();
                 CheckNotepad();
             }
+            ReloadData(goal);
         }
         //Quando iniciar o evento Running é ativado o prefab que foi criado desativado
         private void ActivateHUD(Goal goal){
@@ -96,6 +97,17 @@ namespace GoalSystem{
         {
             Goal.Started -= CreateUIGoal;
             Goal.Running -= ActivateHUD;
+        }
+        //Consulta o databasse para veririfcar se tem objetivos ativos ou completos
+        private void ReloadData(Goal goal){
+            if(goal.LoadGoal()){
+                if(goal.type == GoalType.OPCIONAL){
+                     ActivateHUD(goal);
+                }
+            }
+            if(goal.loadActiveGoals()){
+                ActivateHUD(goal);
+            }
         }
     }
 }

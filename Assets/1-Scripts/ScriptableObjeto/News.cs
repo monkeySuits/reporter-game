@@ -14,8 +14,10 @@ public class News : ScriptableObject
     public Color bodyColor;
     public Sprite photograph;
     public string title;
+    [TextArea( 2, 8 )]
     public string text;
     [Header("Notepad")]
+    [TextArea( 2, 8 )]
     public string note;
     [Header("Good or Bad")]
     public string choice;

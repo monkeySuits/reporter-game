@@ -11,12 +11,14 @@ namespace GoalSystem{
         public GameObject imgCompleted;
         public GameObject imgDefault;
         public GoalType type;
+        public Vector2 goalID; // Index do objetivo a ser salvo
         //Ao se criado preenche as informações e fica ouvindo o evento Achieved
         public void Inite(Goal goal){
             title.text = goal.title;
             sequence = goal.sequenceID;
             Goal.Achieved += OnCompleted;
             type = goal.type;
+            goalID = goal.goalID;
             if(type == GoalType.OPCIONAL){
                 title.color = Color.red;
             }

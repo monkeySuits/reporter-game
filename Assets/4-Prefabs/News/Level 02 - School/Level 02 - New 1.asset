@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f1c9b8d08562742847c1cd21de5644, type: 3}
+  m_Name: Level 02 - New 1
+  m_EditorClassIdentifier: 
+  headerColor: {r: 0.003921569, g: 0.35686275, b: 0, a: 1}
+  newspaperLogo: {fileID: 0}
+  newspaperName: Vera Cruz Diaria
+  bodyColor: {r: 0.4, g: 0.48235294, b: 0.42745098, a: 1}
+  photograph: {fileID: 0}
+  title: Nota Maxima na PNC
+  text: "S\xF4nia \xE9 a primeira aluna a conseguir gabaritar a prova nacional de
+    conhecimento por tr\xEAs anos consecutivos,  se tornando a aluna com maior conhecimento
+    do pa\xEDs, o orgulho da na\xE7\xE3o!"
+  note: " \u25CF Publiquei a not\xEDcia com sucesso. \nObserva\xE7\xE3o: Publiquei
+    uma mat\xE9ria que aborda a qualidade do ensino na rede p\xFAblica de educa\xE7\xE3o. 
+    Mas sinto que poderia ter realizado uma mat\xE9ria mais completa sobre a educa\xE7\xE3o
+    p\xFAblica."
+  choice: bad

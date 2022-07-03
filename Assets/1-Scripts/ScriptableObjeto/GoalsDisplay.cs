@@ -11,7 +11,7 @@ public class GoalsDisplay : MonoBehaviour
     public Goals goals;
     public TextMeshProUGUI goal;
     public Image artworkImage;
-
+    
     private bool check;
     public Vector2 goalID; // Index do objetivo a ser salvo
     MMSaveLoadTester saveLoadScript;

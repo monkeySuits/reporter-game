@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MoreMountains.Tools;
 using UnityEngine;
 
 namespace GoalSystem{
@@ -26,6 +27,9 @@ namespace GoalSystem{
         [TextArea]
         public string description;
         private bool activedGoal = false;
+        public Vector2 goalID; // Index do objetivo a ser salvo
+        MMSaveLoadTester saveLoadScript;
+        private bool check = false;
 
         public bool ActivedGoal { get => activedGoal; set => activedGoal = value;}
 
@@ -37,8 +41,9 @@ namespace GoalSystem{
         public static event Action<Goal> Deactivated;
         void Start()
         {
-            Started?.Invoke(this);
             Debug.Log("Started Goal ID: "+sequenceID);
+            saveLoadScript = GameObject.FindGameObjectWithTag("SaveManager").GetComponent<MMSaveLoadTester>();
+            Started?.Invoke(this);
         }
 
         // Update is called once per frame
@@ -74,7 +79,40 @@ namespace GoalSystem{
             Deactivated?.Invoke(this);
         }
         public void Trigger(){
+            ActiveGoal();
             Running?.Invoke(this);
+        }
+
+        public void saveObjective(){
+            saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].done = true;
+            Debug.Log("Salvando objetivo: " + (int)goalID.x + " e " + (int)goalID.y);
+            saveLoadScript.Save();
+            check = true;
+        }
+
+        public bool LoadGoal() {
+            bool load = saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].done;
+            Debug.Log("saldado? " + saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].done);
+            
+            if (load) {
+                check = true;
+                status = GoalStatus.COMPLETD;
+                Achieved?.Invoke(this);
+                gameObject.SetActive(false);
+            }else{
+                check = false;
+            }
+            return check;
+        }
+
+        public void ActiveGoal(){
+            saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].active = true;
+            saveLoadScript.Save();
+        }
+
+        public bool loadActiveGoals(){
+            bool load = saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].active;
+            return load;
         }
     }
 }
