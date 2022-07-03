@@ -8,6 +8,7 @@ namespace MoreMountains.Tools
     public class Flags
     {
         public string name;
+        public bool active;
         public bool done;
     }
 
