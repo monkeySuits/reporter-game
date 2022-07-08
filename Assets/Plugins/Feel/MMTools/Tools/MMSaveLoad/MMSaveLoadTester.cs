@@ -39,6 +39,8 @@ namespace MoreMountains.Tools
         public float posX;
         public float posY;
         public float posZ;
+
+        public LevelProgressObject GetCurrentLevel { get { return levels[curLevel]; } } // Getter of the current level
     }
 
     /// <summary>
