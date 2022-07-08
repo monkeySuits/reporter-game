@@ -97,6 +97,13 @@ items:
 - key: School_Librarian_7
   value: Em todo caso, qualquer dúvida só me chamar!
 
+- key: School_Librarian_wNoItem_1
+  value: ...Hm... Eu acho que poderia ter sido mais claro...
+- key: School_Librarian_wNoItem_2
+  value: Eu só posso aceitar a devolução se você me trouxer o livro emprestado e o Passe Estudantil para dar baixa no sistema!
+- key: School_Librarian_wNoItem_3
+  value: Sem estes dois itens, eu não sou de muita serventia... sinto muito, senhorita!
+
 - key: School_Librarian_wPass_1
   value: Ah! Vejo que está com o seu Passe Estudantil! Muito bom!
 - key: School_Librarian_wPass_2
@@ -109,8 +116,6 @@ items:
 - key: School_Librarian_wBook_2
   value: Você só precisa apresentar seu Passe Estudantil e eu lido com o resto!
 
-- key: School_Librarian_wKeys_0
-  value: Perfeito! Nós podemos começar o processo de devolução! Permita-me acessar o sistema aqui...
 - key: School_Librarian_wKeys_1
   value: Perfeito! Nós podemos começar o processo de devolução! Permita-me acessar o sistema aqui...
 - key: School_Librarian_wKeys_2
