@@ -562,6 +562,34 @@ MonoBehaviour:
       onPlayEvent:
         m_PersistentCalls:
           m_Calls: []
+--- !u!114 &2115876847680855276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5061872531872629231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaeb534cc65b64b49b88ccfe01b6b9ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitToFinish: 1
+  lockPlayer: 0
+--- !u!114 &4164726538355557178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5061872533038622714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaeb534cc65b64b49b88ccfe01b6b9ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitToFinish: 1
+  lockPlayer: 1
 --- !u!1 &5304246633973522502
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,9 +727,15 @@ MonoBehaviour:
   waitToFinish: 1
   cutscenePaths:
   - cutscene: {fileID: 6688450879797109983}
+    playOnlyOnceFlag: 
+    conditions:
+    - flagType: 1
+      flagName: Library Pass
     keys:
     - {fileID: 0}
   - cutscene: {fileID: 7620870114585586748}
+    playOnlyOnceFlag: 
+    conditions: []
     keys: []
 --- !u!1 &6064327410160446765
 GameObject:
@@ -747,34 +781,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254eace2a7a36ca4f85b85e581ad4d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4164726538355557178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5061872533038622714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaeb534cc65b64b49b88ccfe01b6b9ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitToFinish: 1
-  lockPlayer: 1
---- !u!114 &2115876847680855276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5061872531872629231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaeb534cc65b64b49b88ccfe01b6b9ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitToFinish: 1
-  lockPlayer: 0
 --- !u!1 &6352508926830749593
 GameObject:
   m_ObjectHideFlags: 0

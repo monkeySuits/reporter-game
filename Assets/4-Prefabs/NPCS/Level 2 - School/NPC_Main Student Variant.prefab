@@ -441,6 +441,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8372018953096799644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735986227248672794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaeb534cc65b64b49b88ccfe01b6b9ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitToFinish: 1
+  lockPlayer: 1
+--- !u!114 &1188481225291526208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735986228364383759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaeb534cc65b64b49b88ccfe01b6b9ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitToFinish: 1
+  lockPlayer: 1
 --- !u!1 &1960137017612544869
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,34 +517,6 @@ MonoBehaviour:
   destroyOnEnd: 0
   hasStarted: 0
   isDebugging: 0
---- !u!114 &1188481225291526208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735986228364383759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaeb534cc65b64b49b88ccfe01b6b9ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitToFinish: 1
-  lockPlayer: 1
---- !u!114 &8372018953096799644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735986227248672794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaeb534cc65b64b49b88ccfe01b6b9ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitToFinish: 1
-  lockPlayer: 1
 --- !u!1 &3338803529849402428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,8 +1019,14 @@ MonoBehaviour:
   waitToFinish: 0
   cutscenePaths:
   - cutscene: {fileID: 0}
+    playOnlyOnceFlag: 
+    conditions:
+    - flagType: 1
+      flagName: Book
     keys: []
   - cutscene: {fileID: 0}
+    playOnlyOnceFlag: 
+    conditions: []
     keys: []
 --- !u!1 &7020418077522037075
 GameObject:
