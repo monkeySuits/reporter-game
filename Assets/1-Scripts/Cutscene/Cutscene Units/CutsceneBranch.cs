@@ -1,4 +1,3 @@
-using devlog98.Backdoor;
 using MoreMountains.Tools;
 using System;
 using System.Collections.Generic;
@@ -26,12 +25,7 @@ namespace MSuits.Cutscene.Unit {
                     continue;
                 }
 
-                foreach (CollectableItem key in cutscenePath.keys) {
-                    if (!PlayerInventory.instance.Inventory().Contains(key)) {
-                        unlockedCutscene = false;
-                        break;
-                    }
-                }
+                unlockedCutscene = cutscenePath.CheckConditions();
 
                 if (unlockedCutscene) {
                     currentPath = cutscenePath;
@@ -64,7 +58,7 @@ namespace MSuits.Cutscene.Unit {
         public class CutsceneBranchPath {
             public Cutscene cutscene; // cutscene to be played
             public string playOnlyOnceFlag; // if filled, this guarantees cutscene will only play once and then a flag will be saved stopping its repetition
-            public List<CollectableItem> keys; // TODO - transform into conditions, based on save system
+            public List<CutscenePathFlag> conditions; // conditions to be met for cutscene to play
 
             // save when path is played
             public void SaveProgression() {
@@ -97,6 +91,53 @@ namespace MSuits.Cutscene.Unit {
 
                 return progressionFlag.done;
             }
+
+            // check if conditions are met
+            public bool CheckConditions() {
+                foreach (CutscenePathFlag condition in conditions) {
+                    switch (condition.flagType) {
+                        case CutscenePathFlag.CutscenePathFlagType.Progression:
+                            if (!CheckProgressionFlag(condition.flagName)) {
+                                return false;
+                            }
+                            break;
+                        case CutscenePathFlag.CutscenePathFlagType.Item:
+                            if (!CheckItemInLevelFlag(condition.flagName)) {
+                                return false;
+                            }
+                            break;
+                    }
+                }
+
+                return true;
+            }
+
+            // check conditions
+            private bool CheckProgressionFlag(string flagName) {
+                Flags progressionFlag = MMSaveLoadTester.Instance.SaveObject.GetCurrentLevel.progressionFlags.Find(x => x.name == flagName);
+                if (progressionFlag == null) {
+                    return false;
+                }
+
+                return progressionFlag.done;
+            }
+
+            private bool CheckItemInLevelFlag(string flagName) {
+                ItemsInLevel itemInLevel = MMSaveLoadTester.Instance.SaveObject.GetCurrentLevel.itemsInLevel.Find(x => x.name == flagName);
+                if (itemInLevel == null) {
+                    return false;
+                }
+
+                return itemInLevel.acquired;
+            }
+        }
+
+        [Serializable]
+        public struct CutscenePathFlag {
+            public enum CutscenePathFlagType { Progression, Item }
+
+            public CutscenePathFlagType flagType;
+            public string flagName;
         }
     }
 }
