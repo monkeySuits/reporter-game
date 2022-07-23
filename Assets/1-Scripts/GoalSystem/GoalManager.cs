@@ -45,7 +45,7 @@ namespace GoalSystem{
         //Adiciona o objetivo automaticamente ao gerenciador quando um objetivo é criado
         private void AddGoal(Goal goalObject)
         {
-            Debug.Log("Add Goal: " + goalObject.sequenceID);
+            //Debug.Log("Add Goal: " + goalObject.sequenceID);
             if(!goals.Exists(goal => goal.sequenceID == goalObject.sequenceID)){
                 goals.Add(goalObject);
             }else{
@@ -74,8 +74,6 @@ namespace GoalSystem{
 
             foreach(var goal in goals){     
                 if(goal.type != GoalType.REQUIRED){
-                    Debug.Log("Goal: "+ goal);
-                    Debug.Log("Goal astatus: "+ goal.status);
                     if(goal.status != GoalStatus.COMPLETD){
                         value = false;
                     }

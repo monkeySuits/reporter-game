@@ -59,9 +59,22 @@ namespace GoalSystem{
             foreach(var hud in goalsHUD){
                 if(hud.sequence == goal.sequenceID){
                     hud.gameObject.SetActive(true);
+                    Notification.instance.newTask(goal.title);
                 }
             }
         }
+
+        private void ReloadObjectives(Goal goal){
+            if(!optionalText.activeSelf){
+                optionalText.SetActive(true);
+            }
+            foreach(var hud in goalsHUD){
+                if(hud.sequence == goal.sequenceID){
+                    hud.gameObject.SetActive(true);
+                }
+            }
+        }
+
         //Reodernar a lista com base no numero da sequencia dos prefabs
         public void ReorderList()
         {
@@ -102,11 +115,11 @@ namespace GoalSystem{
         private void ReloadData(Goal goal){
             if(goal.LoadGoal()){
                 if(goal.type == GoalType.OPCIONAL){
-                     ActivateHUD(goal);
+                     ReloadObjectives(goal);
                 }
             }
             if(goal.loadActiveGoals()){
-                ActivateHUD(goal);
+                ReloadObjectives(goal);
             }
         }
     }

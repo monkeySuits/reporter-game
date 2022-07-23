@@ -30,6 +30,7 @@ namespace GoalSystem{
         public Vector2 goalID; // Index do objetivo a ser salvo
         MMSaveLoadTester saveLoadScript;
         private bool check = false;
+        public bool active;
 
         public bool ActivedGoal { get => activedGoal; set => activedGoal = value;}
 
@@ -41,9 +42,13 @@ namespace GoalSystem{
         public static event Action<Goal> Deactivated;
         void Start()
         {
-            Debug.Log("Started Goal ID: "+sequenceID);
+            //Debug.Log("Started Goal ID: "+sequenceID);
             saveLoadScript = GameObject.FindGameObjectWithTag("SaveManager").GetComponent<MMSaveLoadTester>();
             Started?.Invoke(this);
+
+            if(status != GoalStatus.WAIT){
+                active = true;
+            }
         }
 
         // Update is called once per frame
@@ -92,7 +97,7 @@ namespace GoalSystem{
 
         public bool LoadGoal() {
             bool load = saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].done;
-            Debug.Log("saldado? " + saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].done);
+            //Debug.Log("saldado? " + saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].done);
             
             if (load) {
                 check = true;

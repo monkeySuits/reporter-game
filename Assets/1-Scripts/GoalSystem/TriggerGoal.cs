@@ -5,7 +5,6 @@ using GoalSystem;
 
 public class TriggerGoal : Goal
 {
-    bool active;
     protected override GoalStatus IsRunning()
     {
         return GoalStatus.COMPLETD;
