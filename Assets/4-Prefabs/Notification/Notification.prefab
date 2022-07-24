@@ -94,6 +94,7 @@ MonoBehaviour:
   anim: {fileID: 3812886816378084208}
   newItemText: 'Novo item: '
   newTaskText: 'Novo objetivo: '
+  notificationList: []
 --- !u!1 &3812886816160608102
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +131,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 332.025, y: 0}
+  m_AnchoredPosition: {x: 138.95999, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3812886816160608109
@@ -161,10 +162,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<width=100%> Novo item: Cart\xE3o de credito oiiiiiiiiiiiii"
+  m_text: '<width=100%> Novo item: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7e74b30a49065f64b897dafd327a473d, type: 2}
+  m_sharedMaterial: {fileID: -1043216563061300957, guid: 7e74b30a49065f64b897dafd327a473d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

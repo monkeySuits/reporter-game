@@ -15,8 +15,7 @@ public class Notification : MonoBehaviour
     [SerializeField] private string newItemText;
     [SerializeField] private string newTaskText;
     public static Notification instance; // reference to singleton
-    private bool newNotify;
-    private string dataText;
+    public List<string> notificationList = new List<string>();
     void Start()
     {
         if (instance != null && instance != this) {
@@ -41,17 +40,19 @@ public class Notification : MonoBehaviour
     private void Hide(){
         anim.SetTrigger("Hide");
         active = false;
-        if(newNotify){
-            newNotify = false;
+        if(notificationList.Count > 0){
             Invoke("Fila", 0.11f);
         }
     }
 //Method to show the notification
     private void Show(string notify){
         if(active){
-            newNotify = true;
-            dataText = notify;
+            //dataText = notify;
+            notificationList.Add(notify);
         }else{
+            if(notificationList.Count > 0){
+                notificationList.RemoveAt(0);
+            } 
             active = true;
             notificationText.text = notify;
             anim.SetTrigger("Show");
@@ -60,6 +61,6 @@ public class Notification : MonoBehaviour
     }
 
     private void Fila(){
-        Show(customText);
+        Show(notificationList[0]);
     }
 }

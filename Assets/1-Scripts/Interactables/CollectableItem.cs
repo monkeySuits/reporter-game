@@ -42,7 +42,8 @@ namespace devlog98.Backdoor
         private void CollectItem()
         {
             collectFeedback.PlayFeedbacks();
-            PlayerHUD.instance.ShowHint(item.collectHint);
+            //PlayerHUD.instance.ShowHint(item.collectHint);
+            Notification.instance.newItem(item.collectHint);
             PlayerInventory.instance.CollectableFound(this);
             CreateInventory.instance.AddElement(this.GetComponent<CollectableItem>());
 

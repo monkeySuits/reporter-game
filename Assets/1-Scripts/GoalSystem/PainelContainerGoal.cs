@@ -24,7 +24,7 @@ namespace GoalSystem{
         {
             //Ouvir os eventos Started e Running
             Goal.Started += CreateUIGoal;
-            Goal.Running += ActivateHUD;
+            Goal.Running += newTask;
         }
         //Quando iniciar o evento Started é criado um prefab na HUD com o objeto que disparou o evento
         //Caso o objeto esteja com o status Wait, ele é criado desativado
@@ -59,20 +59,17 @@ namespace GoalSystem{
             foreach(var hud in goalsHUD){
                 if(hud.sequence == goal.sequenceID){
                     hud.gameObject.SetActive(true);
-                    Notification.instance.newTask(goal.title);
                 }
             }
         }
 
+        private void newTask(Goal goal){
+            Notification.instance.newTask(goal.title);
+            ActivateHUD(goal);
+        }
+
         private void ReloadObjectives(Goal goal){
-            if(!optionalText.activeSelf){
-                optionalText.SetActive(true);
-            }
-            foreach(var hud in goalsHUD){
-                if(hud.sequence == goal.sequenceID){
-                    hud.gameObject.SetActive(true);
-                }
-            }
+            ActivateHUD(goal);
         }
 
         //Reodernar a lista com base no numero da sequencia dos prefabs
@@ -109,7 +106,7 @@ namespace GoalSystem{
         private void OnDestroy() 
         {
             Goal.Started -= CreateUIGoal;
-            Goal.Running -= ActivateHUD;
+            Goal.Running -= newTask;
         }
         //Consulta o databasse para veririfcar se tem objetivos ativos ou completos
         private void ReloadData(Goal goal){

@@ -51,7 +51,6 @@ namespace GoalSystem{
             }
         }
 
-        // Update is called once per frame
         void Update()
         {   
             //Caso o objetivo esteja ativo ele verifica o status e realiza ações por status
@@ -94,12 +93,13 @@ namespace GoalSystem{
             saveLoadScript.Save();
             check = true;
         }
-
+        //Verifica se o objetivo esta feito
         public bool LoadGoal() {
             bool load = saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].done;
             //Debug.Log("saldado? " + saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].done);
             
             if (load) {
+                active = true;
                 check = true;
                 status = GoalStatus.COMPLETD;
                 Achieved?.Invoke(this);
@@ -109,14 +109,17 @@ namespace GoalSystem{
             }
             return check;
         }
-
+        //Salva o objetivo como feito
         public void ActiveGoal(){
             saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].active = true;
             saveLoadScript.Save();
         }
-
+        //Verifica se o objetivo esta ativo para ser feito
         public bool loadActiveGoals(){
             bool load = saveLoadScript.SaveObject.levels[(int)goalID.x].progressionFlags[(int)goalID.y].active;
+            if(load){
+                active = true;
+            }
             return load;
         }
     }
